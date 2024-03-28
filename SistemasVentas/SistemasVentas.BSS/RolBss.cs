@@ -11,30 +11,27 @@ namespace SistemasVentas.BSS
 {
     public class RolBss
     {
-        RolDAL dal = new RolDAL();
+        RolDal dal = new RolDal();
         public DataTable ListarRolBss()
         {
             return dal.ListarRolDal();
         }
-
         public void InsertarRolBss(Rol rol)
         {
-            dal.InsertarRolDAL(rol);
+            dal.InsertarRolDal(rol);
         }
-
-        public Rol ObtenerRolIdBss(int id)
+        public Rol ObtenerIdBss(int id)
         {
-            return dal.ObtenerRolIdDal(id);
+            return dal.ObtenerRolId(id);
         }
-
         public void EditarRolBss(Rol r)
         {
             dal.EditarRolDal(r);
         }
-
         public void EliminarRolBss(int id)
         {
             dal.EliminarRolDal(id);
+
         }
 
     }

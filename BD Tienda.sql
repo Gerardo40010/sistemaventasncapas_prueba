@@ -1,5 +1,4 @@
-CREATE DATABASE TIENDABDS
-
+CREATE DATABASE BDTienda
 
 CREATE TABLE PERSONA (
 IDPERSONA INT IDENTITY (1,1) NOT NULL,
@@ -151,7 +150,7 @@ FOREIGN KEY (IDPRODUCTO) REFERENCES PRODUCTO (IDPRODUCTO),
 
 
 
-insert into persona values('Pedro' ,'Fernandez','+59172979377','5744158','pedro@gmail.com','Activo');
+insert into persona values('Pedrito' ,'Fernandez','+59172979377','5744158','pedro@gmail.com','Activo');
 insert into persona values('Adrián' ,'Pérez' ,'+59161234567' ,'1234567' ,'adrian@gmail.com','Activo');
 insert into persona values('Belén','González' ,'+59173456789' ,'87654321' ,'belen@gmail.com','Activo');
 insert into persona values('Ana' ,'Rodríguez' ,'+59169876543' ,'2345678' ,'ana@gmail.com','Inactivo');
@@ -210,51 +209,52 @@ insert into rol values ('Cajero','Activo');
 insert into rol values ('Vendedor','Activo');
 insert into rol values ('Guia','Activo');
 
-insert into usuario values (1, 'pedrof', '6841', '01/02/22 14:00:00');
-insert into usuario values (2, 'adrianp', '2847', '23/02/22 13:50:00');
-insert into usuario values (3, 'beleng', '9189', '15/03/22 09:20:00');
-insert into usuario values (4, 'anar', '5539', '20/05/22 18:25:00');
-insert into usuario values (5, 'brunol', '2664', '21/05/22 15:30:00');
-insert into usuario values (6, 'carlag', '7655', '06/06/22 16:45:00');
-insert into usuario values (7, 'diegos', '7655', '06/06/22 12:32:00');
-insert into usuario values (8, 'elenam', '9048', '14/08/22 12:01:00');
-insert into usuario values (9, 'fabiang', '3590', '30/09/22 11:28:00');
-insert into usuario values (10, 'gloriad', '4916', '29/10/22 14:11:00');
-insert into usuario values (11, 'hugor', '9719', '27/12/22 10:15:00');
-insert into usuario values (12, 'irenet', '6789', '03/01/23 08:23:00');
-insert into usuario values (13, 'jorgem', '6487', '22/02/23 08:41:00');
-insert into usuario values (14, 'karenv', '3523', '24/02/23 11:57:00');
-insert into usuario values (15, 'luisc', '7559', '24/05/23 17:00:00');
-insert into usuario values (16, 'mariar', '4221', '01/05/23 14:30:00');
-insert into usuario values (17, 'nicolasf', '1629', '10/06/23 16:09:00');
-insert into usuario values (18, 'oliviar', '8219', '12/07/23 13:10:00');
-insert into usuario values (19, 'pabloo', '1520', '12/08/23 15:06:00');
-insert into usuario values (20, 'emmaa', '7538', '20/08/23 12:50:00');
+insert into usuario values (1, 'pedrof', '6841', '2022-02-01 14:00:00');
+insert into usuario values (2, 'adrianp', '2847', '2022-02-23 13:50:00');
+insert into usuario values (3, 'beleng', '9189', '2022-03-15 09:20:00');
+insert into usuario values (4, 'anar', '5539', '2022-05-20 18:25:00');
+insert into usuario values (5, 'brunol', '2664', '2022-05-21 15:30:00');
+insert into usuario values (6, 'carlag', '7655', '2022-06-06 16:45:00');
+insert into usuario values (7, 'diegos', '7655', '2022-06-06 12:32:00');
+insert into usuario values (8, 'elenam', '9048', '2022-08-14 12:01:00');
+insert into usuario values (9, 'fabiang', '3590', '2022-09-30 11:28:00');
+insert into usuario values (10, 'gloriad', '4916', '2022-10-29 14:11:00');
+insert into usuario values (11, 'hugor', '9719', '2022-12-27 10:15:00');
+insert into usuario values (12, 'irenet', '6789', '2023-01-03 08:23:00');
+insert into usuario values (13, 'jorgem', '6487', '2023-02-22 08:41:00');
+insert into usuario values (14, 'karenv', '3523', '2023-02-24 11:57:00');
+insert into usuario values (15, 'luisc', '7559', '2023-05-24 17:00:00');
+insert into usuario values (16, 'mariar', '4221', '2023-05-01 14:30:00');
+insert into usuario values (17, 'nicolasf', '1629', '2023-06-10 16:09:00');
+insert into usuario values (18, 'oliviar', '8219', '2023-07-12 13:10:00');
+insert into usuario values (19, 'pabloo', '1520', '2023-08-12 15:06:00');
+insert into usuario values (20, 'emmaa', '7538', '2023-08-20 12:50:00');
 
-select * from usuario;
-insert into usuariorol values (1, 1, '01/02/22 14:00:00', 'Activo');
-insert into usuariorol values (2, 2, '23/02/22 13:50:00', 'Activo');
-insert into usuariorol values (3, 3, '15/03/22 09:20:00', 'Activo');
-insert into usuariorol values (4, 4, '20/05/22 18:25:00', 'Activo');
-insert into usuariorol values (5, 5, '21/05/22 15:30:00', 'Activo');
-insert into usuariorol values (6, 1, '06/06/22 16:45:00', 'Activo');
-insert into usuariorol values (7, 2, '06/06/22 12:32:00', 'Activo');
-insert into usuariorol values (8, 3, '14/08/22 12:01:00', 'Activo');
-insert into usuariorol values (9, 4, '30/09/22 11:28:00', 'Activo');
-insert into usuariorol values (10, 5, '29/10/22 14:11:00', 'Activo');
-insert into usuariorol values (11, 1, '27/12/22 10:15:00', 'Activo');
-insert into usuariorol values (12, 2, '03/01/23 08:23:00', 'Activo');
-insert into usuariorol values (13, 3, '22/02/23 08:41:00', 'Activo');
-insert into usuariorol values (14, 4, '24/02/23 11:57:00', 'Activo');
-insert into usuariorol values (15, 5, '24/05/23 17:00:00', 'Activo');
-insert into usuariorol values (16, 1, '01/05/23 14:30:00', 'Activo');
-insert into usuariorol values (17, 2, '10/06/23 16:09:00', 'Activo');
-insert into usuariorol values (18, 3, '12/07/23 13:10:00', 'Activo');
-insert into usuariorol values (19, 4, '12/08/23 15:06:00', 'Activo');
-insert into usuariorol values (20, 5, '20/08/23 12:50:00', 'Activo');
+select * from USUARIO 
 
-select * from usuariorol;
+insert into usuariorol values (1, 1, '2022-02-01 14:00:00', 'Activo');
+insert into usuariorol values (2, 2, '2022-02-23 13:50:00', 'Activo');
+insert into usuariorol values (3, 3, '2022-03-15 09:20:00', 'Activo');
+insert into usuariorol values (4, 4, '2022-05-20 18:25:00', 'Activo');
+insert into usuariorol values (5, 5, '2022-05-21 15:30:00', 'Activo');
+insert into usuariorol values (6, 1, '2022-06-06 16:45:00', 'Activo');
+insert into usuariorol values (7, 2, '2022-06-06 12:32:00', 'Activo');
+insert into usuariorol values (8, 3, '2022-08-14 12:01:00', 'Activo');
+insert into usuariorol values (9, 4, '2022-09-30 11:28:00', 'Activo');
+insert into usuariorol values (10, 5, '2022-10-29 14:11:00', 'Activo');
+insert into usuariorol values (11, 1, '2022-12-27 10:15:00', 'Activo');
+insert into usuariorol values (12, 2, '2023-01-03 08:23:00', 'Activo');
+insert into usuariorol values (13, 3, '2023-02-22 08:41:00', 'Activo');
+insert into usuariorol values (14, 4, '2023-02-24 11:57:00', 'Activo');
+insert into usuariorol values (15, 5, '2023-05-24 17:00:00', 'Activo');
+insert into usuariorol values (16, 1, '2023-05-01 14:30:00', 'Activo');
+insert into usuariorol values (17, 2, '2023-06-10 16:09:00', 'Activo');
+insert into usuariorol values (18, 3, '2023-07-12 13:10:00', 'Activo');
+insert into usuariorol values (19, 4, '2023-08-12 15:06:00', 'Activo');
+insert into usuariorol values (20, 5, '2023-08-20 12:50:00', 'Activo');
 
+
+select * from USUARIOROL
 
 insert into marca values ('Pil', 'Activo');
 insert into marca values ('Prolac', 'Activo');
@@ -340,38 +340,39 @@ insert into proveedor values ('Johnson & Johnson', '+59169217483', 'B. San Jorge
 
 select * from PROVEEDOR
 
-insert into ingreso values (1, '01/02/22 14:00:00', '100', 'Activo');
-insert into ingreso values (2, '01/02/22 13:50:00', '450', 'Activo');
-insert into ingreso values (3, '15/03/22 09:20:00', '300', 'Activo');
-insert into ingreso values (4, '20/05/22 18:25:00', '678', 'Activo');
-insert into ingreso values (5, '21/05/22 15:30:00', '206', 'Activo');
-insert into ingreso values (6, '06/06/22 16:45:00', '190', 'Activo');
-insert into ingreso values (7, '06/06/22 12:32:00', '480', 'Activo');
-insert into ingreso values (8, '14/08/22 12:01:00', '500', 'Activo');
-insert into ingreso values (9, '14/08/22 12:01:00', '389', 'Activo');
-insert into ingreso values (10, '29/10/22 14:11:00', '600', 'Activo');
-insert into ingreso values (1, '27/12/22 10:15:00', '520', 'Activo');
-insert into ingreso values (2, '03/01/23 08:23:00', '279', 'Activo');
-insert into ingreso values (3, '22/02/23 08:41:00', '340', 'Activo');
-insert into ingreso values (4, '24/02/23 11:57:00', '250', 'Activo');
-insert into ingreso values (5, '01/05/23 17:00:00', '800', 'Activo');
-insert into ingreso values (6, '01/05/23 14:30:00', '320', 'Activo');
-insert into ingreso values (7, '10/06/23 16:09:00', '160', 'Activo');
-insert into ingreso values (8, '12/06/23 13:10:00', '365', 'Activo');
-insert into ingreso values (9, '12/06/23 15:06:00', '485', 'Activo');
-insert into ingreso values (10, '20/07/23 12:50:00', '200', 'Activo');
-insert into ingreso values (1, '20/07/23 12:50:00', '455', 'Activo');
-insert into ingreso values (2, '23/07/23 12:50:00', '630', 'Activo');
-insert into ingreso values (3, '10/08/23 12:50:00', '710', 'Activo');
-insert into ingreso values (4, '10/08/23 12:50:00', '400', 'Activo');
-insert into ingreso values (5, '15/08/23 12:50:00', '200', 'Activo');
-insert into ingreso values (6, '16/08/23 12:50:00', '310', 'Activo');
-insert into ingreso values (7, '01/09/23 12:50:00', '570', 'Activo');
-insert into ingreso values (8, '01/09/23 12:50:00', '300', 'Activo');
-insert into ingreso values (9, '09/09/23 12:50:00', '290', 'Activo');
-insert into ingreso values (10, '10/09/23 12:50:00', '315', 'Activo');
+insert into ingreso values (1, '2022-02-01 14:00:00', '100', 'Activo');
+insert into ingreso values (2, '2022-02-01 13:50:00', '450', 'Activo');
+insert into ingreso values (3, '2022-03-15 09:20:00', '300', 'Activo');
+insert into ingreso values (4, '2022-05-20 18:25:00', '678', 'Activo');
+insert into ingreso values (5, '2022-05-21 15:30:00', '206', 'Activo');
+insert into ingreso values (6, '2022-06-06 16:45:00', '190', 'Activo');
+insert into ingreso values (7, '2022-06-06 12:32:00', '480', 'Activo');
+insert into ingreso values (8, '2022-08-14 12:01:00', '500', 'Activo');
+insert into ingreso values (9, '2022-08-14 12:01:00', '389', 'Activo');
+insert into ingreso values (10, '2022-10-29 14:11:00', '600', 'Activo');
+insert into ingreso values (1, '2022-12-27 10:15:00', '520', 'Activo');
+insert into ingreso values (2, '2023-01-03 08:23:00', '279', 'Activo');
+insert into ingreso values (3, '2023-02-22 08:41:00', '340', 'Activo');
+insert into ingreso values (4, '2023-02-24 11:57:00', '250', 'Activo');
+insert into ingreso values (5, '2023-05-01 17:00:00', '800', 'Activo');
+insert into ingreso values (6, '2023-05-01 14:30:00', '320', 'Activo');
+insert into ingreso values (7, '2023-06-10 16:09:00', '160', 'Activo');
+insert into ingreso values (8, '2023-06-12 13:10:00', '365', 'Activo');
+insert into ingreso values (9, '2023-06-12 15:06:00', '485', 'Activo');
+insert into ingreso values (10, '2023-07-20 12:50:00', '200', 'Activo');
+insert into ingreso values (1, '2023-07-20 12:50:00', '455', 'Activo');
+insert into ingreso values (2, '2023-07-23 12:50:00', '630', 'Activo');
+insert into ingreso values (3, '2023-08-10 12:50:00', '710', 'Activo');
+insert into ingreso values (4, '2023-08-10 12:50:00', '400', 'Activo');
+insert into ingreso values (5, '2023-08-15 12:50:00', '200', 'Activo');
+insert into ingreso values (6, '2023-08-16 12:50:00', '310', 'Activo');
+insert into ingreso values (7, '2023-09-01 12:50:00', '570', 'Activo');
+insert into ingreso values (8, '2023-09-01 12:50:00', '300', 'Activo');
+insert into ingreso values (9, '2023-09-09 12:50:00', '290', 'Activo');
+insert into ingreso values (10, '2023-09-10 12:50:00', '315', 'Activo');
 
-select * from ingreso;
+
+select * from ingreso
 
 insert into producto values (1, 1, 'Leche Pil', '21473658', 10, 'Leche', 'Activo');
 insert into producto values (1, 2, 'Karpil', '46929107', 20, 'Karpil', 'Activo');
@@ -476,59 +477,58 @@ insert into producto values (12, 18, 'Ola Clorito', '56187247', 20, 'Cloro', 'Ac
 
 select * from PRODUCTO
 
-insert into provee values (1, 1, '09/01/22 12:47:29', 100);
-insert into provee values (2, 2, '12/01/22 11:34:09', 50);
-insert into provee values (3, 3, '15/01/22 09:27:20', 60);
-insert into provee values (4, 4, '29/01/22 08:10:29', 200);
-insert into provee values (5, 5, '01/01/22 12:36:59', 150);
-insert into provee values (6, 6, '02/01/22 04:16:28', 110);
-insert into provee values (7, 7, '02/01/22 08:20:08', 230);
-insert into provee values (8, 8, '10/01/22 16:30:18', 10);
-insert into provee values (9, 9, '14/01/22 03:47:29', 30);
-insert into provee values (10, 10, '15/01/22 17:02:06', 50);
-insert into provee values (11, 1, '20/01/22 15:45:00', 140);
-insert into provee values (12, 2, '28/01/22 05:47:44', 100);
-insert into provee values (13, 3, '01/02/22 18:33:31', 100);
-insert into provee values (14, 4, '08/02/22 10:20:00', 200);
-insert into provee values (15, 5, '20/02/22 12:35:00', 60);
-insert into provee values (16, 6, '23/02/22 07:19:09', 90);
-insert into provee values (17, 7, '27/02/22 15:32:11', 100);
-insert into provee values (18, 8, '05/03/22 22:18:45', 120);
-insert into provee values (19, 9, '08/03/22 20:04:47', 150);
-insert into provee values (20, 10, '21/03/22 08:50:24', 180);
-insert into provee values (21, 1, '03/04/22 21:36:02', 100);
-insert into provee values (22, 2, '16/04/22 10:21:40', 120);
-insert into provee values (23, 3, '19/04/22 09:54:37', 100);
-insert into provee values (24, 4, '29/04/22 23:07:27', 100);
-insert into provee values (25, 5, '13/05/22 11:53:05', 50);
-insert into provee values (26, 6, '26/05/22 00:38:43', 200);
-insert into provee values (27, 7, '31/05/22 18:29:14', 200);
-insert into provee values (28, 8, '08/06/22 13:24:30', 80);
-insert into provee values (29, 9, '12/06/22 07:15:52', 70);
-insert into provee values (30, 10, '21/06/22 02:10:08', 95);
-insert into provee values (31, 1, '04/07/22 14:55:46', 100);
-insert into provee values (32, 2, '17/07/22 03:41:23', 100);
-insert into provee values (33, 3, '24/07/22 16:41:38', 120);
-insert into provee values (34, 4, '30/07/22 16:27:01', 150);
-insert into provee values (35, 5, '09/08/22 05:27:26', 180);
-insert into provee values (36, 6, '21/09/22 14:03:13', 200);
-insert into provee values (37, 7, '10/04/22 02:48:51', 50);
-insert into provee values (38, 8, '16/11/22 11:24:39', 90);
-insert into provee values (39, 9, '12/01/22 00:10:17', 100);
-insert into provee values (40, 10, '13/01/23 08:46:04', 110);
-insert into provee values (41, 1, '25/02/23 17:21:42', 200);
-insert into provee values (42, 2, '03/12/23 06:07:20', 200);
-insert into provee values (43, 3, '24/04/23 14:43:07', 100);
-insert into provee values (44, 4, '05/07/23 03:28:45', 150);
-insert into provee values (45, 5, '19/06/23 12:04:32', 140);
-insert into provee values (46, 6, '07/02/23 00:50:10', 70);
-insert into provee values (47, 7, '14/08/23 09:25:58', 100);
-insert into provee values (48, 8, '29/08/23 22:11:35', 50);
-insert into provee values (49, 9, '10/11/23 06:47:23', 100);
-insert into provee values (50, 10, '24/10/23 19:33:01', 200);
+insert into provee values (1, 1, '2022-01-09 12:47:29', 100);
+insert into provee values (2, 2, '2022-01-12 11:34:09', 50);
+insert into provee values (3, 3, '2022-01-15 09:27:20', 60);
+insert into provee values (4, 4, '2022-01-29 08:10:29', 200);
+insert into provee values (5, 5, '2022-01-01 12:36:59', 150);
+insert into provee values (6, 6, '2022-01-02 04:16:28', 110);
+insert into provee values (7, 7, '2022-01-02 08:20:08', 230);
+insert into provee values (8, 8, '2022-01-10 16:30:18', 10);
+insert into provee values (9, 9, '2022-01-14 03:47:29', 30);
+insert into provee values (10, 10, '2022-01-15 17:02:06', 50);
+insert into provee values (11, 1, '2022-01-20 15:45:00', 140);
+insert into provee values (12, 2, '2022-01-28 05:47:44', 100);
+insert into provee values (13, 3, '2022-02-01 18:33:31', 100);
+insert into provee values (14, 4, '2022-02-08 10:20:00', 200);
+insert into provee values (15, 5, '2022-02-20 12:35:00', 60);
+insert into provee values (16, 6, '2022-02-23 07:19:09', 90);
+insert into provee values (17, 7, '2022-02-27 15:32:11', 100);
+insert into provee values (18, 8, '2022-03-05 22:18:45', 120);
+insert into provee values (19, 9, '2022-03-08 20:04:47', 150);
+insert into provee values (20, 10, '2022-03-21 08:50:24', 180);
+insert into provee values (21, 1, '2022-04-03 21:36:02', 100);
+insert into provee values (22, 2, '2022-04-16 10:21:40', 120);
+insert into provee values (23, 3, '2022-04-19 09:54:37', 100);
+insert into provee values (24, 4, '2022-04-29 23:07:27', 100);
+insert into provee values (25, 5, '2022-05-13 11:53:05', 50);
+insert into provee values (26, 6, '2022-05-26 00:38:43', 200);
+insert into provee values (27, 7, '2022-05-31 18:29:14', 200);
+insert into provee values (28, 8, '2022-06-08 13:24:30', 80);
+insert into provee values (29, 9, '2022-06-12 07:15:52', 70);
+insert into provee values (30, 10, '2022-06-21 02:10:08', 95);
+insert into provee values (31, 1, '2022-07-04 14:55:46', 100);
+insert into provee values (32, 2, '2022-07-17 03:41:23', 100);
+insert into provee values (33, 3, '2022-07-24 16:41:38', 120);
+insert into provee values (34, 4, '2022-07-30 16:27:01', 150);
+insert into provee values (35, 5, '2022-08-09 05:27:26', 180);
+insert into provee values (36, 6, '2022-09-21 14:03:13', 200);
+insert into provee values (37, 7, '2022-04-10 02:48:51', 50);
+insert into provee values (38, 8, '2022-11-16 11:24:39', 90);
+insert into provee values (39, 9, '2022-01-12 00:10:17', 100);
+insert into provee values (40, 10, '2023-01-13 08:46:04', 110);
+insert into provee values (41, 1, '2023-02-25 17:21:42', 200);
+insert into provee values (42, 2, '2023-12-03 06:07:20', 200);
+insert into provee values (43, 3, '2023-04-24 14:43:07', 100);
+insert into provee values (44, 4, '2023-07-05 03:28:45', 150);
+insert into provee values (45, 5, '2023-06-19 12:04:32', 140);
+insert into provee values (46, 6, '2023-02-07 00:50:10', 70);
+insert into provee values (47, 7, '2023-08-14 09:25:58', 100);
+insert into provee values (48, 8, '2023-08-29 22:11:35', 50);
+insert into provee values (49, 9, '2023-11-10 06:47:23', 100);
+insert into provee values (50, 10, '2023-10-24 19:33:01', 200);
 
-select * from provee;
-
+select * from PROVEE
 
 insert into venta values (1, 1, '2022-09-01 12:47:29', 10, 'Exitoso');
 insert into venta values (2, 2, '2022-09-01 12:50:56', 11, 'Exitoso');

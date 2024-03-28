@@ -9,29 +9,29 @@ using System.Threading.Tasks;
 
 namespace SistemasVentas.BSS
 {
-    public class IngresoBSS
+    public class IngresoBss
     {
-        IngresoDAL dal = new IngresoDAL();
+        IngresoDal dal = new IngresoDal();
         public DataTable ListarIngresoBss()
         {
             return dal.ListarIngresoDal();
         }
         public void InsertarIngresoBss(Ingreso ingreso)
         {
-            dal.InsertarIngresoDAL(ingreso);
+            dal.InsertarIngresoDal(ingreso);
         }
-
-        public Ingreso ObtenerIngresoIdBss(int id)
+        public Ingreso ObtenerIdBss(int id)
         {
-            return dal.ObtenerIngresoIdDal(id);
+            return dal.ObtenerIngresoId(id);
         }
-        public void EditarIngresoBss(Ingreso p)
+        public void EditarIngresoBss(Ingreso i)
         {
-            dal.EditarIngresoDal(p);
+            dal.EditarIngresoDal(i);
         }
         public void EliminarIngresoBss(int id)
         {
             dal.EliminarIngresoDal(id);
+
         }
     }
 }

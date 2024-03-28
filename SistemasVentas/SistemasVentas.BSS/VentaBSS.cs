@@ -9,30 +9,29 @@ using System.Threading.Tasks;
 
 namespace SistemasVentas.BSS
 {
-    public class VentaBSS
+    public class VentaBss
     {
-        VentaDAL dal = new VentaDAL();
+        VentaDal dal = new VentaDal();
         public DataTable ListarVentaBss()
         {
             return dal.ListarVentaDal();
         }
-
         public void InsertarVentaBss(Venta venta)
         {
-            dal.InsertarVentaDAL(venta);
+            dal.InsertarVentaDal(venta);
         }
-
-        public Venta ObtenerVentaIdBss(int id)
+        public Venta ObtenerIdBss(int id)
         {
-            return dal.ObtenerVentaIdDal(id);
+            return dal.ObtenerVentaId(id);
         }
-        public void EditarVentaBss(Venta p)
+        public void EditarVentaBss(Venta v)
         {
-            dal.EditarVentaDal(p);
+            dal.EditarVentaDal(v);
         }
         public void EliminarVentaBss(int id)
         {
             dal.EliminarVentaDal(id);
+
         }
     }
 }

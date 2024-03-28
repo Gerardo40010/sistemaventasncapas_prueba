@@ -489,8 +489,8 @@
     },
     "SistemasVentas.DAL/1.0.0": {
       "type": "project",
-      "path": "../SistemasVentas.DA/SistemasVentas.DAL.csproj",
-      "msbuildProject": "../SistemasVentas.DA/SistemasVentas.DAL.csproj"
+      "path": "../SistemasVentas.DAL/SistemasVentas.DAL.csproj",
+      "msbuildProject": "../SistemasVentas.DAL/SistemasVentas.DAL.csproj"
     },
     "SistemasVentas.Modelos/1.0.0": {
       "type": "project",
@@ -505,24 +505,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Laboratorio A\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\Usuario\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Desarrollo de sistemas nuevo\\prueba 3 xd\\sistemaventasncapas\\SistemasVentas\\SistemasVentas.BSS\\SistemasVentas.BSS.csproj",
+      "projectUniqueName": "D:\\Desarrollador de sistemas\\copiaaa\\SistemasVentas\\SistemasVentas.BSS\\SistemasVentas.BSS.csproj",
       "projectName": "SistemasVentas.BSS",
-      "projectPath": "D:\\Desarrollo de sistemas nuevo\\prueba 3 xd\\sistemaventasncapas\\SistemasVentas\\SistemasVentas.BSS\\SistemasVentas.BSS.csproj",
-      "packagesPath": "C:\\Users\\Laboratorio A\\.nuget\\packages\\",
-      "outputPath": "D:\\Desarrollo de sistemas nuevo\\prueba 3 xd\\sistemaventasncapas\\SistemasVentas\\SistemasVentas.BSS\\obj\\",
+      "projectPath": "D:\\Desarrollador de sistemas\\copiaaa\\SistemasVentas\\SistemasVentas.BSS\\SistemasVentas.BSS.csproj",
+      "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
+      "outputPath": "D:\\Desarrollador de sistemas\\copiaaa\\SistemasVentas\\SistemasVentas.BSS\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Laboratorio A\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -530,18 +525,17 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\Desarrollo de sistemas nuevo\\prueba 3 xd\\sistemaventasncapas\\SistemasVentas\\SistemasVentas.DA\\SistemasVentas.DAL.csproj": {
-              "projectPath": "D:\\Desarrollo de sistemas nuevo\\prueba 3 xd\\sistemaventasncapas\\SistemasVentas\\SistemasVentas.DA\\SistemasVentas.DAL.csproj"
+            "D:\\Desarrollador de sistemas\\copiaaa\\SistemasVentas\\SistemasVentas.DAL\\SistemasVentas.DAL.csproj": {
+              "projectPath": "D:\\Desarrollador de sistemas\\copiaaa\\SistemasVentas\\SistemasVentas.DAL\\SistemasVentas.DAL.csproj"
             },
-            "D:\\Desarrollo de sistemas nuevo\\prueba 3 xd\\sistemaventasncapas\\SistemasVentas\\SistemasVentas.Modelos\\SistemasVentas.Modelos.csproj": {
-              "projectPath": "D:\\Desarrollo de sistemas nuevo\\prueba 3 xd\\sistemaventasncapas\\SistemasVentas\\SistemasVentas.Modelos\\SistemasVentas.Modelos.csproj"
+            "D:\\Desarrollador de sistemas\\copiaaa\\SistemasVentas\\SistemasVentas.Modelos\\SistemasVentas.Modelos.csproj": {
+              "projectPath": "D:\\Desarrollador de sistemas\\copiaaa\\SistemasVentas\\SistemasVentas.Modelos\\SistemasVentas.Modelos.csproj"
             }
           }
         }
@@ -571,7 +565,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
       }
     }
   }

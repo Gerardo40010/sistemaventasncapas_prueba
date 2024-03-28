@@ -9,9 +9,9 @@ using System.Threading.Tasks;
 
 namespace SistemasVentas.BSS
 {
-    public class UsuarioBSS
+    public class UsuarioBss
     {
-        UsuarioDAL dal = new UsuarioDAL();
+        UsuarioDal dal = new UsuarioDal();
         public DataTable ListarUsuarioBss()
         {
             return dal.ListarUsuarioDal();
@@ -20,21 +20,19 @@ namespace SistemasVentas.BSS
         {
             dal.InsertarUsuarioDal(usuario);
         }
-
-        public Usuario ObtenerUsuarioIdBss(int id)
+        public Usuario ObtenerIdBss(int id)
         {
-            return dal.ObtenerUsuarioIdDal(id);
+            return dal.ObtenerUsuarioId(id);
         }
-
         public void EditarUsuarioBss(Usuario u)
         {
             dal.EditarUsuarioDal(u);
         }
-
         public void EliminarUsuarioBss(int id)
         {
             dal.EliminarUsuarioDal(id);
-        }
 
+        }
     }
 }
+

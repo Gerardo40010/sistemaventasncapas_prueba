@@ -9,21 +9,20 @@ using System.Threading.Tasks;
 
 namespace SistemasVentas.BSS
 {
-    public class ProductoBSS
+    public class ProductoBss
     {
-        ProductoDAL dal = new ProductoDAL();
+        ProductoDal dal = new ProductoDal();
         public DataTable ListarProductoBss()
         {
             return dal.ListarProductoDal();
         }
         public void InsertarProductoBss(Producto producto)
         {
-            dal.InsertarProductoDAL(producto);
+            dal.InsertarProductoDal(producto);
         }
-
-        public Producto ObtenerProductoIdBss(int id)
+        public Producto ObtenerIdBss(int id)
         {
-            return dal.ObtenerProductoIdDal(id);
+            return dal.ObtenerProductoId(id);
         }
         public void EditarProductoBss(Producto p)
         {
@@ -32,6 +31,7 @@ namespace SistemasVentas.BSS
         public void EliminarProductoBss(int id)
         {
             dal.EliminarProductoDal(id);
+
         }
     }
 }

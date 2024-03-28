@@ -9,30 +9,29 @@ using System.Threading.Tasks;
 
 namespace SistemasVentas.BSS
 {
-    public class DetalleingBSS
+    public class DetalleIngBss
     {
-        DetalleingDAL dal = new DetalleingDAL();
-        public DataTable ListarDetalleingBss()
+        DetalleIngDal dal = new DetalleIngDal();
+        public DataTable ListarDetalleIngBss()
         {
-            return dal.ListarDetalleingDal();
+            return dal.ListarDetalleIngDal();
         }
-
-        public void InsertarDetalleingBss(Detalleing detalleing)
+        public void InsertarDetalleIngBss(DetalleIng detalleIng)
         {
-            dal.InsertarDetalleingDAL(detalleing);
+            dal.InsertarDetalleIngDal(detalleIng);
         }
-        public Detalleing ObtenerDetalleIngIdBss(int id)
+        public DetalleIng ObtenerIdBss(int id)
         {
-            return dal.ObtenerDetalleIngIdDal(id);
+            return dal.ObtenerDetalleIngId(id);
         }
-        public void EditarDetalleIngBss(Detalleing p)
+        public void EditarDetalleIngBss(DetalleIng d)
         {
-            dal.EditarDetalleIngDal(p);
+            dal.EditarDetalleIngDal(d);
         }
         public void EliminarDetalleIngBss(int id)
         {
             dal.EliminarDetalleIngDal(id);
+
         }
     }
-
 }
