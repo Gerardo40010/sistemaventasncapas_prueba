@@ -529,11 +529,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Desarrollador de sistemas\\copiaaa\\SistemasVentas\\SistemasVentas.VISTA\\SistemasVentas.VISTA.csproj",
+      "projectUniqueName": "D:\\Desarrollador de sistemas\\ProyectoFinal\\oa\\sistemaventasncapas_prueba\\SistemasVentas\\SistemasVentas.VISTA\\SistemasVentas.VISTA.csproj",
       "projectName": "SistemasVentas.VISTA",
-      "projectPath": "D:\\Desarrollador de sistemas\\copiaaa\\SistemasVentas\\SistemasVentas.VISTA\\SistemasVentas.VISTA.csproj",
+      "projectPath": "D:\\Desarrollador de sistemas\\ProyectoFinal\\oa\\sistemaventasncapas_prueba\\SistemasVentas\\SistemasVentas.VISTA\\SistemasVentas.VISTA.csproj",
       "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-      "outputPath": "D:\\Desarrollador de sistemas\\copiaaa\\SistemasVentas\\SistemasVentas.VISTA\\obj\\",
+      "outputPath": "D:\\Desarrollador de sistemas\\ProyectoFinal\\oa\\sistemaventasncapas_prueba\\SistemasVentas\\SistemasVentas.VISTA\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -550,11 +550,11 @@
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
           "projectReferences": {
-            "D:\\Desarrollador de sistemas\\copiaaa\\SistemasVentas\\SistemasVentas.BSS\\SistemasVentas.BSS.csproj": {
-              "projectPath": "D:\\Desarrollador de sistemas\\copiaaa\\SistemasVentas\\SistemasVentas.BSS\\SistemasVentas.BSS.csproj"
+            "D:\\Desarrollador de sistemas\\ProyectoFinal\\oa\\sistemaventasncapas_prueba\\SistemasVentas\\SistemasVentas.BSS\\SistemasVentas.BSS.csproj": {
+              "projectPath": "D:\\Desarrollador de sistemas\\ProyectoFinal\\oa\\sistemaventasncapas_prueba\\SistemasVentas\\SistemasVentas.BSS\\SistemasVentas.BSS.csproj"
             },
-            "D:\\Desarrollador de sistemas\\copiaaa\\SistemasVentas\\SistemasVentas.Modelos\\SistemasVentas.Modelos.csproj": {
-              "projectPath": "D:\\Desarrollador de sistemas\\copiaaa\\SistemasVentas\\SistemasVentas.Modelos\\SistemasVentas.Modelos.csproj"
+            "D:\\Desarrollador de sistemas\\ProyectoFinal\\oa\\sistemaventasncapas_prueba\\SistemasVentas\\SistemasVentas.Modelos\\SistemasVentas.Modelos.csproj": {
+              "projectPath": "D:\\Desarrollador de sistemas\\ProyectoFinal\\oa\\sistemaventasncapas_prueba\\SistemasVentas\\SistemasVentas.Modelos\\SistemasVentas.Modelos.csproj"
             }
           }
         }

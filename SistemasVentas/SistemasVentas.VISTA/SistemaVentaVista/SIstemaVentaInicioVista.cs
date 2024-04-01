@@ -55,5 +55,47 @@ namespace SistemasVentas.VISTA.SistemaVentaVista
             ProvedorInicioSesionVista listarvista = new ProvedorInicioSesionVista();
             listarvista.Show();
         }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+           // VendedorInicioSesionVista listarvista = new VendedorInicioSesionVista();
+           // listarvista.Show();
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            GerenteInicioSesionVista listarvista = new GerenteInicioSesionVista();
+            listarvista.Show();
+        }
+
+        private void pictureBox2_Click_1(object sender, EventArgs e)
+        {
+            VendedorInicioSesionVista listarvista = new VendedorInicioSesionVista();
+             listarvista.Show();
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            ProvedorInicioSesionVista listarvista = new ProvedorInicioSesionVista();
+            listarvista.Show();
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+            GerenteInicioSesionVista listarvista = new GerenteInicioSesionVista();
+            listarvista.Show();
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+            VendedorInicioSesionVista listarvista = new VendedorInicioSesionVista();
+            listarvista.Show();
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+            ProvedorInicioSesionVista listarvista = new ProvedorInicioSesionVista();
+            listarvista.Show();
+        }
     }
 }
