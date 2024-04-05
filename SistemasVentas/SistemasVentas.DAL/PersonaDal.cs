@@ -1,10 +1,10 @@
-﻿using System;
+﻿using SistemasVentas.Modelos;
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using SistemasVentas.Modelos;
 
 namespace SistemasVentas.DAL
 {
@@ -13,52 +13,56 @@ namespace SistemasVentas.DAL
         public DataTable ListarPersonasDal()
         {
             string consulta = "select * from persona";
-            DataTable Lista = conexion.EjecutarDataTabla(consulta, "tabla");
-            return Lista;
+            DataTable lista = Conexion.EjecutarDataTabla(consulta, "tabla");
+            return lista;
         }
-        public void InsertarPersonDal(Persona persona)
+
+        public void InsertarPersonaDal(Persona persona)
         {
             string consulta = "insert into persona values('" + persona.Nombre + "'," +
-                                                  "'" + persona.Apellido + "'," +
-                                                  "'" + persona.Telefono + "'," +
-                                                  "'" + persona.Ci + "'," +
-                                                  "'" + persona.Correo + "'," +
-                                                  "'Activo')";
-            conexion.Ejecutar(consulta);
+                                                         "'" + persona.Apellido + "'," +
+                                                         "'" + persona.Telefono + "'," +
+                                                         "'" + persona.Ci + "'," +
+                                                         "'" + persona.Correo + "'," +
+                                                         "'" + persona.Estado + "')";
+            Conexion.Ejecutar(consulta);
         }
-        Persona p = new Persona();
-        public Persona ObtenerPersonaId(int id)
-        {
-            string consulta = "select * from persona where idpersona=" + id;
-            DataTable tabla = conexion.EjecutarDataTabla(consulta, "asdas");
-            
-            if (tabla.Rows.Count>0)
-            {
-                p.IdPersona = Convert.ToInt32(tabla.Rows[0]["idpersona"]);
-                p.Nombre = tabla.Rows[0]["nombre"].ToString();
-                p.Apellido = tabla.Rows[0]["apellido"].ToString();
-                p.Telefono = tabla.Rows[0]["telefono"].ToString();
-                p.Ci = tabla.Rows[0]["ci"].ToString();
-                p.Correo = tabla.Rows[0]["correo"].ToString();
-                p.Estado = tabla.Rows[0]["estado"].ToString();
-            }
-            return p;
 
-        }
-        public void EditarPersonaDal(Persona p)
+        public Persona ObtenerPersonaId(int id) 
         {
-            string consulta = "update persona set nombre='" + p.Nombre + "'," +
-                                                  "apellido='" + p.Apellido + "'," +
-                                                  "telefono='" + p.Telefono + "'," +
-                                                  "ci='" + p.Ci + "'," +
-                                                  "correo='" + p.Correo + "'" +
-                                          "where idpersona=" + p.IdPersona; 
-            conexion.Ejecutar(consulta);
+            string consulta = "select * from persona where idpersona = " + id;
+            DataTable tabla = Conexion.EjecutarDataTabla(consulta, "asdas");
+            Persona persona = new Persona();
+            if (tabla.Rows.Count > 0) 
+            {
+                persona.IdPersona = Convert.ToInt32(tabla.Rows[0]["idPersona"]);
+                persona.Nombre = tabla.Rows[0]["nombre"].ToString();
+                persona.Apellido = tabla.Rows[0]["apellido"].ToString();
+                persona.Telefono = tabla.Rows[0]["telefono"].ToString();
+                persona.Ci = tabla.Rows[0]["ci"].ToString();
+                persona.Correo = tabla.Rows[0]["correo"].ToString();
+                persona.Estado = tabla.Rows[0]["estado"].ToString();
+            }
+            return persona;
         }
-        public void EliminarPersonaDal(int id)
+
+        public void EditarPersonaDal(Persona persona)
         {
-            string consulta = "delete from persona where idpersona=" + id;
-            conexion.Ejecutar(consulta);
+            string consulta = "update persona set nombre ='" + persona.Nombre + "'," +
+                                                 "apellido ='" + persona.Apellido + "'," +
+                                                 "telefono ='" + persona.Telefono + "'," +
+                                                 "ci ='" + persona.Ci + "'," +
+                                                 "correo ='" + persona.Correo + "'," +
+                                                 "estado ='" + persona.Estado + "' " +
+                                    "where idpersona=" + persona.IdPersona;
+
+            Conexion.Ejecutar(consulta);
+        }
+
+        public void EliminarPersonaDal (int id)
+        {
+            string consulta = "delete from persona where idpersona =" + id;
+            Conexion.Ejecutar (consulta);
         }
     }
 }

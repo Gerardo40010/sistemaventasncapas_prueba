@@ -12,26 +12,29 @@ namespace SistemasVentas.BSS
     public class ProveedorBss
     {
         ProveedorDal dal = new ProveedorDal();
-        public DataTable ListarProveedorBss()
+        public DataTable ListarProveedoresBass()
         {
-            return dal.ListarProveedorDal();
+            return dal.ListarProveedoresDal();
         }
+
         public void InsertarProveedorBss(Proveedor proveedor)
         {
             dal.InsertarProveedorDal(proveedor);
         }
-        public Proveedor ObtenerIdBss(int id)
+
+        public Proveedor ObtenerProveedorIdBss(int id)
         {
             return dal.ObtenerProveedorId(id);
         }
-        public void EditarProveedorBss(Proveedor p)
+
+        public void EditarProveedorBss(Proveedor proveedor)
         {
-            dal.EditarProveedorDal(p);
+            dal.EditarProveedorDal(proveedor);
         }
+
         public void EliminarProveedorBss(int id)
         {
             dal.EliminarProveedorDal(id);
-
         }
     }
 }

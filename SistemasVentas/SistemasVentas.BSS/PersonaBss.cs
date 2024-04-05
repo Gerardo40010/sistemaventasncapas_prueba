@@ -12,26 +12,29 @@ namespace SistemasVentas.BSS
     public class PersonaBss
     {
         PersonaDal dal = new PersonaDal();
-        public DataTable ListarPersonasBss()
+        public DataTable ListarPersonasBass()
         {
             return dal.ListarPersonasDal();
         }
-        public void InsertarPersonaBss(Persona persona)
+        
+        public void InsertarPersonaBss(Persona persona) 
         {
-            dal.InsertarPersonDal(persona);
+            dal.InsertarPersonaDal(persona);
         }
-        public Persona ObtenerIdBss(int id)
+
+        public Persona ObtenerIdBss (int id)
         {
             return dal.ObtenerPersonaId(id);
         }
-        public void EditarPersonaBss(Persona p)
+
+        public void EditarPersonaBss(Persona persona)
         {
-            dal.EditarPersonaDal(p);
+            dal.EditarPersonaDal(persona);
         }
-        public void EliminarPersonaBss(int id)
+
+        public void EliminarPersonaBss(int id) 
         {
             dal.EliminarPersonaDal(id);
-
         }
     }
 }

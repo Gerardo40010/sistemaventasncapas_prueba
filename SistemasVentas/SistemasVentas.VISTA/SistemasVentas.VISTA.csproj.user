@@ -2,40 +2,40 @@
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup />
   <ItemGroup>
-    <Compile Update="ClienteVistas\ClienteInsertarVistas.cs">
+    <Compile Update="ClienteVistas\ClienteEditarVista.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="ClienteVista\ClienteEditarVista.cs">
+    <Compile Update="ClienteVistas\ClienteInsertarVista.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="ClienteVista\ClienteInsertarVista.cs">
+    <Compile Update="ClienteVistas\ClienteListarVista.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="ClienteVista\ClienteListarVista.cs">
+    <Compile Update="ClienteVistas\VendeClienteListarVista.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="DetalleIngVistas\DetalleIngInsertarVistas.cs">
+    <Compile Update="DetalleIngVistas\DetalleIngEditarVista.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="DetalleIngVista\DetalleIngEditarVista.cs">
+    <Compile Update="DetalleIngVistas\DetalleIngInsertarVista.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="DetalleIngVista\DetalleIngInsertarVista.cs">
+    <Compile Update="DetalleIngVistas\DetalleIngListarVista.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="DetalleIngVista\DetalleIngListarVista.cs">
+    <Compile Update="DetalleIngVistas\VendeDetalleIngListarVista.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="DetalleVentaVistas\DetalleVentaInsertarVistas.cs">
+    <Compile Update="DetalleVentaVistas\DetalleVentaEditarVista.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="DetalleVentaVista\DetalleVentaEditarVista.cs">
+    <Compile Update="DetalleVentaVistas\DetalleVentaInsertarVista.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="DetalleVentaVista\DetalleVentaInsertarVista.cs">
+    <Compile Update="DetalleVentaVistas\DetalleVentaListarVista.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="DetalleVentaVista\DetalleVentaListarVista.cs">
+    <Compile Update="DetalleVentaVistas\VendeDetalleVentaListarVista.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Form1.cs">
@@ -47,46 +47,58 @@
     <Compile Update="GerenteVista\GerenteListarVista.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="IngresoVistas\IngresoInsertarVistas.cs">
+    <Compile Update="IngresoVistas\IngresoEditarVista.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="IngresoVista\IngresoEditarVista.cs">
+    <Compile Update="IngresoVistas\IngresoInsertarVista.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="IngresoVista\IngresoInsertarVista.cs">
+    <Compile Update="IngresoVistas\IngresoListarVista.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="IngresoVista\IngresoListarVista.cs">
+    <Compile Update="IngresoVistas\VendeIngresoListarVista.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="MarcaVista\MarcaEditarVista.cs">
+    <Compile Update="LoginUser\CompraProductoVista.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="MarcaVista\MarcaInsertarVista.cs">
+    <Compile Update="LoginUser\WelcomeIngresarVista.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="MarcaVista\MarcaListarVista.cs">
+    <Compile Update="MarcaVistas\MarcaEditarVista.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="PersonaVista\PersonaEditarVista.cs">
+    <Compile Update="MarcaVistas\MarcaInsertarVista.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="PersonaVista\PersonaInsertarVista.cs">
+    <Compile Update="MarcaVistas\MarcaListarVista.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="PersonaVista\PersonaListarVista.cs">
+    <Compile Update="MarcaVistas\VendeMarcaListarVista.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="ProductoVistas\ProductoInsertarVistas.cs">
+    <Compile Update="PersonaVistas\PersonaEditarVista.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="ProductoVista\ProductoEditarVista.cs">
+    <Compile Update="PersonaVistas\PersonaInsertarVista.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="ProductoVista\ProductoInsertarVista.cs">
+    <Compile Update="PersonaVistas\PersonaListarVista.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="ProductoVista\ProductoListarVista.cs">
+    <Compile Update="PersonaVistas\VendePersonaListarVista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ProductoVistas\ProductoEditarVista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ProductoVistas\ProductoInsertarVista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ProductoVistas\ProductoListarVista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ProductoVistas\VendeProductoListarVista.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="ProvedorVista\ProvedorInicioSesionVista.cs">
@@ -95,70 +107,79 @@
     <Compile Update="ProvedorVista\ProvedorListarVista.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="ProveedorVista\ProveedorEditarVista.cs">
+    <Compile Update="ProveedorVistas\ProveedorEditarVista.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="ProveedorVista\ProveedorInsertarVista.cs">
+    <Compile Update="ProveedorVistas\ProveedorInsertarVista.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="ProveedorVista\ProveedorListarVista.cs">
+    <Compile Update="ProveedorVistas\ProveedorListarVista.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="ProveeVistas\ProveeInsertarVistas.cs">
+    <Compile Update="ProveedorVistas\VendeProveedorListarVista.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="ProveeVista\ProveeEditarVista.cs">
+    <Compile Update="ProveeVistas\ProveeEditarVista.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="ProveeVista\ProveeInsertarVista.cs">
+    <Compile Update="ProveeVistas\ProveeInsertarVista.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="ProveeVista\ProveeListarVista.cs">
+    <Compile Update="ProveeVistas\ProveeListarVista.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="RolVista\RolEditarVista.cs">
+    <Compile Update="ProveeVistas\VendeProveeListarVista.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="RolVista\RolInserVista.cs">
+    <Compile Update="RolVistas\RolEditarVista.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="RolVista\RolListarVista.cs">
+    <Compile Update="RolVistas\RolInsertarVista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="RolVistas\RolListarVista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="RolVistas\VendeRolListarVista.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="SistemaVentaVista\SIstemaVentaInicioVista.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="TipoProdVista\TipoProdEditarVista.cs">
+    <Compile Update="TipoProdVistas\TipoProdEditarVista.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="TipoProdVista\TipoProdInsertarVista.cs">
+    <Compile Update="TipoProdVistas\TipoProdInsertarVista.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="TipoProdVista\TipoProdListarVista.cs">
+    <Compile Update="TipoProdVistas\TipoProdListarVista.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="UsuarioRolVistas\UsuarioRolInsertarVistas.cs">
+    <Compile Update="TipoProdVistas\VendeTipoProdListarVista.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="UsuarioRolVista\UsuarioRolEditarVista.cs">
+    <Compile Update="UsuarioRolVistas\UsuarioRolEditarVista.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="UsuarioRolVista\UsuarioRolInsertarVista.cs">
+    <Compile Update="UsuarioRolVistas\UsuarioRolInsertarVista.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="UsuarioRolVista\UsuarioRolListarVista.cs">
+    <Compile Update="UsuarioRolVistas\UsuarioRolListarVista.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="UsuarioVistas\UsuarioInsertarVistas.cs">
+    <Compile Update="UsuarioRolVistas\VendeUsuarioRolListarVista.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="UsuarioVista\UsuarioEditarVista.cs">
+    <Compile Update="UsuarioVistas\UsuarioEditarVista.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="UsuarioVista\UsuarioInsertarVista.cs">
+    <Compile Update="UsuarioVistas\UsuarioInsertarVista.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="UsuarioVista\UsuarioListarVista.cs">
+    <Compile Update="UsuarioVistas\UsuarioListarVista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="UsuarioVistas\VendeUsuarioListarVista.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="VendedorVista\VendedorInicioSesionVista.cs">
@@ -173,16 +194,16 @@
     <Compile Update="VendedorVista\VendedorProductoListarVista.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="VentaVistas\VentaInsertarVistas.cs">
+    <Compile Update="VentaVistas\VendeVentaListarVista.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="VentaVista\VentaEditarVista.cs">
+    <Compile Update="VentaVistas\VentaEditarVista.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="VentaVista\VentaInsertarVista.cs">
+    <Compile Update="VentaVistas\VentaInsertarVista.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="VentaVista\VentaListarVista.cs">
+    <Compile Update="VentaVistas\VentaListarVista.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>

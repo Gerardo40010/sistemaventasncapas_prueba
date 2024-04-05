@@ -10,43 +10,47 @@ namespace SistemasVentas.DAL
 {
     public class TipoProdDal
     {
-        public DataTable ListarTipoProdDal()
+        public DataTable ListarTipoProdsDal()
         {
-            string consulta = "select * from tipoprod";
-            DataTable Lista = conexion.EjecutarDataTabla(consulta, "tabla");
-            return Lista;
+            string consulta = "select * from tipoProd";
+            DataTable lista = Conexion.EjecutarDataTabla(consulta, "tabla");
+            return lista;
         }
-        public void InsertarTipoProdDal(TipoProd tipoprod)
+
+        public void InsertarTipoProdDal(TipoProd tipoProd)
         {
-            string consulta = "insert into tipoprod values('" + tipoprod.Nombre + "'," +
-                                                  "'Activo')";
-            conexion.Ejecutar(consulta);
+            string consulta = "insert into tipoProd values('" + tipoProd.Nombre + "'," +
+                                                          "'" + tipoProd.Estado + "')";
+            Conexion.Ejecutar(consulta);
         }
+
         public TipoProd ObtenerTipoProdId(int id)
         {
-            string consulta = "select * from tipoprod where idtipoprod=" + id;
-            DataTable tabla = conexion.EjecutarDataTabla(consulta, "asdas");
-            TipoProd t = new TipoProd();
-
+            string consulta = "select * from tipoprod where idtipoprod = " + id;
+            DataTable tabla = Conexion.EjecutarDataTabla(consulta, "asdas");
+            TipoProd tipoProd = new TipoProd();
             if (tabla.Rows.Count > 0)
             {
-                t.IdTipoProd = Convert.ToInt32(tabla.Rows[0]["idtipoprod"]);
-                t.Nombre = tabla.Rows[0]["nombre"].ToString();
-                t.Estado = tabla.Rows[0]["estado"].ToString();
+                tipoProd.IdTipoProd = Convert.ToInt32(tabla.Rows[0]["idTipoProd"]);
+                tipoProd.Nombre = tabla.Rows[0]["nombre"].ToString();
+                tipoProd.Estado = tabla.Rows[0]["estado"].ToString();
             }
-            return t;
+            return tipoProd;
+        }
 
-        }
-        public void EditarTipoProdDal(TipoProd p)
+        public void EditarTipoProdDal(TipoProd tipoProd)
         {
-            string consulta = "update tipoprod set nombre='" + p.Nombre + "'," +
-                                              "where idtipoprod=" + p.IdTipoProd;
-            conexion.Ejecutar(consulta);
+            string consulta = "update tipoprod set nombre ='" + tipoProd.Nombre + "'," +
+                                                 "estado ='" + tipoProd.Estado + "' " +
+                                    "where idtipoprod =" + tipoProd.IdTipoProd;
+
+            Conexion.Ejecutar(consulta);
         }
+
         public void EliminarTipoProdDal(int id)
         {
-            string consulta = "delete from tipoprod where idtipoprod=" + id;
-            conexion.Ejecutar(consulta);
+            string consulta = "delete from tipoprod where idtipoprod =" + id;
+            Conexion.Ejecutar(consulta);
         }
     }
 }

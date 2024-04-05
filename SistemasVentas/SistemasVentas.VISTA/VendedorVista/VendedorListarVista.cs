@@ -21,7 +21,7 @@ namespace SistemasVentas.VISTA.VendedorVista
         private void VendedorListarVista_Load(object sender, EventArgs e)
         {
             ClienteBss bss = new ClienteBss();
-            dataGridView1.DataSource = bss.ListarClienteBss();
+            dataGridView1.DataSource = bss.ListarClientesBass();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -33,43 +33,43 @@ namespace SistemasVentas.VISTA.VendedorVista
         private void button2_Click(object sender, EventArgs e)
         {
             ProductoBss bss = new ProductoBss();
-            dataGridView1.DataSource = bss.ListarProductoBss();
+            dataGridView1.DataSource = bss.ListarProductosBass();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
             VentaBss bss = new VentaBss();
-            dataGridView1.DataSource = bss.ListarVentaBss();
+            dataGridView1.DataSource = bss.ListarVentasBass();
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
             DetalleIngBss bss = new DetalleIngBss();
-            dataGridView1.DataSource = bss.ListarDetalleIngBss();
+            dataGridView1.DataSource = bss.ListarDetallesIngBass();
         }
 
         private void button1_Click_1(object sender, EventArgs e)
         {
             ClienteBss bss = new ClienteBss();
-            dataGridView1.DataSource = bss.ListarClienteBss();
+            dataGridView1.DataSource = bss.ListarClientesBass();
         }
 
         private void button2_Click_1(object sender, EventArgs e)
         {
             ProductoBss bss = new ProductoBss();
-            dataGridView1.DataSource = bss.ListarProductoBss();
+            dataGridView1.DataSource = bss.ListarProductosBass();
         }
 
         private void button3_Click_1(object sender, EventArgs e)
         {
             VentaBss bss = new VentaBss();
-            dataGridView1.DataSource = bss.ListarVentaBss();
+            dataGridView1.DataSource = bss.ListarVentasBass();
         }
 
         private void button4_Click_1(object sender, EventArgs e)
         {
             DetalleIngBss bss = new DetalleIngBss();
-            dataGridView1.DataSource = bss.ListarDetalleIngBss();
+            dataGridView1.DataSource = bss.ListarDetallesIngBass();
         }
 
         private void button5_Click(object sender, EventArgs e)

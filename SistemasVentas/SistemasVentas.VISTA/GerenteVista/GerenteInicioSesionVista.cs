@@ -1,4 +1,7 @@
-﻿using System;
+﻿using SistemasVentas.DAL;
+using SistemasVentas.VISTA.LoginUser;
+using SistemasVentas.VISTA.VendedorVista;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -21,6 +24,23 @@ namespace SistemasVentas.VISTA.GerenteVista
         {
             GerenteListarVista listarVista = new GerenteListarVista();
             listarVista.Show();
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            string usuario = textBox1.Text;
+            string contraseña = textBox2.Text;
+
+            if (Conexion.VerificadorCredenciales(usuario, contraseña))
+            {
+                MessageBox.Show("Iniciando sesion");
+                WelcomeIngresarVista gerenteForm = new WelcomeIngresarVista();
+                gerenteForm.Show();
+            }
+            else
+            {
+                MessageBox.Show("Usuario o contraseña incorrecta");
+            }
         }
     }
 }

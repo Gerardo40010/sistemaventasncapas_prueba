@@ -10,60 +10,65 @@ namespace SistemasVentas.DAL
 {
     public class DetalleIngDal
     {
-        public DataTable ListarDetalleIngDal()
+        public DataTable ListarDetallesIngDal()
         {
-            string consulta = "select * from detalleing";
-            DataTable Lista = conexion.EjecutarDataTabla(consulta, "tabla");
-            return Lista;
+            string consulta = "SELECT        DETALLEING.IDDETALLEING, PRODUCTO.NOMBRE, INGRESO.TOTAL, DETALLEING.FECHAVENC, DETALLEING.CANTIDAD, DETALLEING.PRECIOCOSTO, DETALLEING.PRECIOVENTA, DETALLEING.SUBTOTAL, \n                         DETALLEING.ESTADO\nFROM            DETALLEING INNER JOIN\n                         PRODUCTO ON DETALLEING.IDPRODUCTO = PRODUCTO.IDPRODUCTO INNER JOIN\n                         INGRESO ON DETALLEING.IDINGRESO = INGRESO.IDINGRESO";
+            DataTable lista = Conexion.EjecutarDataTabla(consulta, "tabla");
+            return lista;
         }
+
         public void InsertarDetalleIngDal(DetalleIng detalleIng)
         {
             string consulta = "insert into detalleIng values(" + detalleIng.IdIngreso + "," +
-                                                        "" + detalleIng.IdProducto + "," +
-                                                        "'" + detalleIng.FechaVenc.ToString("yyyy-MM-dd HH:mm:ss") + "'," +
-                                                        "" + detalleIng.Cantidad + "," +
-                                                        "" + detalleIng.PrecioCosto + "," +
-                                                        "" + detalleIng.PrecioVenta + "," +
-                                                        "" + detalleIng.Subtotal + "," +
-                                                        "'Exitoso')";
-            conexion.Ejecutar(consulta);
+                                                         "" + detalleIng.IdProducto + "," +
+                                                         "'" + detalleIng.FechaVenc + "'," +
+                                                         "" + detalleIng.Cantidad + "," +
+                                                         "" + detalleIng.PrecioCosto + "," +
+                                                         "" + detalleIng.PrecioVenta + "," +
+                                                         "" + detalleIng.SubTotal + "," +
+                                                         "'" + detalleIng.Estado + "')";
+            Conexion.Ejecutar(consulta);
         }
+
         public DetalleIng ObtenerDetalleIngId(int id)
         {
-            string consulta = "select * from detalleing where iddetalleing=" + id;
-            DataTable tabla = conexion.EjecutarDataTabla(consulta, "asdas");
-            DetalleIng d = new DetalleIng();
-
+            string consulta = "select * from detalleing where iddetalleing = " + id;
+            DataTable tabla = Conexion.EjecutarDataTabla(consulta, "asdas");
+            DetalleIng detalleIng = new DetalleIng();
             if (tabla.Rows.Count > 0)
             {
-                d.IdDetalleIngreso = Convert.ToInt32(tabla.Rows[0]["iddetalleingreso"]);
-                d.IdProducto = Convert.ToInt32(tabla.Rows[0]["idproducto"]);
-                d.FechaVenc = Convert.ToDateTime(tabla.Rows[0]["fechavenc"]);
-                d.Cantidad = Convert.ToInt32(tabla.Rows[0]["cantidad"]);
-                d.PrecioCosto = Convert.ToDecimal(tabla.Rows[0]["preciocosto"]);
-                d.PrecioVenta = Convert.ToDecimal(tabla.Rows[0]["precioventa"]);
-                d.Subtotal = Convert.ToDecimal(tabla.Rows[0]["subtotal"]);
-                d.Estado = tabla.Rows[0]["estado"].ToString();
+                detalleIng.IdDetalleIng = Convert.ToInt32(tabla.Rows[0]["idDetalleIng"]);
+                detalleIng.IdIngreso = Convert.ToInt32(tabla.Rows[0]["idIngreso"]);
+                detalleIng.IdProducto = Convert.ToInt32(tabla.Rows[0]["idProducto"]);
+                detalleIng.FechaVenc = Convert.ToDateTime(tabla.Rows[0]["fechaVenc"]);
+                detalleIng.Cantidad = Convert.ToInt32(tabla.Rows[0]["cantidad"]);
+                detalleIng.PrecioCosto = Convert.ToDecimal(tabla.Rows[0]["precioCosto"]);
+                detalleIng.PrecioVenta = Convert.ToDecimal(tabla.Rows[0]["precioVenta"]);
+                detalleIng.SubTotal = Convert.ToDecimal(tabla.Rows[0]["SubTotal"]);
+                detalleIng.Estado = tabla.Rows[0]["estado"].ToString();
             }
-            return d;
+            return detalleIng;
+        }
 
-        }
-        public void EditarDetalleIngDal(DetalleIng d)
+        public void EditarDetalleIngDal(DetalleIng detalleIng)
         {
-            string consulta = "update cliente set idingreso=" + d.IdIngreso + "," +
-                                                  "idproducto=" + d.IdProducto + "," +
-                                                  "fechavenc='" + d.FechaVenc + "'," +
-                                                  "cantidad=" + d.Cantidad + "," +
-                                                  "preciocosto=" + d.PrecioCosto + "," +
-                                                  "precioventa=" + d.PrecioVenta + "," +
-                                                  "subtotal=" + d.Subtotal + "" +
-                                              "where iddetalleingreso=" + d.IdDetalleIngreso;
-            conexion.Ejecutar(consulta);
+            string consulta = "update detalleing set idIngreso =" + detalleIng.IdIngreso + "," +
+                                                    "idProducto =" + detalleIng.IdProducto + "," +
+                                                    "fechaVenc ='" + detalleIng.FechaVenc + "'," +
+                                                    "cantidad =" + detalleIng.Cantidad + "," +
+                                                    "precioCosto =" + detalleIng.PrecioCosto + "," +
+                                                    "precioVenta =" + detalleIng.PrecioVenta + "," +
+                                                    "subTotal =" + detalleIng.SubTotal + "," +
+                                                    "estado='" + detalleIng.Estado + "' " +
+                                    "where idDetalleIng=" + detalleIng.IdDetalleIng;
+
+            Conexion.Ejecutar(consulta);
         }
+
         public void EliminarDetalleIngDal(int id)
         {
-            string consulta = "delete from detalleing where iddetalleing=" + id;
-            conexion.Ejecutar(consulta);
+            string consulta = "delete from detalleing where iddetalleing =" + id;
+            Conexion.Ejecutar(consulta);
         }
     }
 }

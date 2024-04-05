@@ -12,22 +12,29 @@ namespace SistemasVentas.BSS
     public class DetalleVentaBss
     {
         DetalleVentaDal dal = new DetalleVentaDal();
-        public DataTable ListarDetalleVentaBss()
+        public DataTable ListarDetallesVentaBass()
         {
-            return dal.ListarDetalleVentaDal();
+            return dal.ListarDetallesVentaDal();
         }
+
         public void InsertarDetalleVentaBss(DetalleVenta detalleVenta)
         {
             dal.InsertarDetalleVentaDal(detalleVenta);
         }
-        public void EditarDetalleVentaBss(DetalleVenta d)
+
+        public DetalleVenta ObtenerDetalleVentaIdBss(int id)
         {
-            dal.EditarDetalleVentaDal(d);
+            return dal.ObtenerDetalleVentaId(id);
         }
+
+        public void EditarDetalleVentaBss(DetalleVenta detalleVenta)
+        {
+            dal.EditarDetalleVentaDal(detalleVenta);
+        }
+
         public void EliminarDetalleVentaBss(int id)
         {
             dal.EliminarDetalleVentaDal(id);
-
         }
     }
 }

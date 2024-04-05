@@ -10,42 +10,47 @@ namespace SistemasVentas.DAL
 {
     public class RolDal
     {
-        public DataTable ListarRolDal()
+        public DataTable ListarRolesDal()
         {
             string consulta = "select * from rol";
-            DataTable Lista = conexion.EjecutarDataTabla(consulta, "tabla");
-            return Lista;
+            DataTable lista = Conexion.EjecutarDataTabla(consulta, "tabla");
+            return lista;
         }
+
         public void InsertarRolDal(Rol rol)
         {
-            string consulta = "insert into rol values('" + rol.Nombre + "'," + "'Activo')";
-            conexion.Ejecutar(consulta);
+            string consulta = "insert into rol values('" + rol.Nombre + "'," +
+                                                     "'" + rol.Estado + "')";
+            Conexion.Ejecutar(consulta);
         }
+
         public Rol ObtenerRolId(int id)
         {
-            string consulta = "select * from rol where idrol=" + id;
-            DataTable tabla = conexion.EjecutarDataTabla(consulta, "asdas");
-            Rol r = new Rol();
-
+            string consulta = "select * from rol where idrol = " + id;
+            DataTable tabla = Conexion.EjecutarDataTabla(consulta, "asdas");
+            Rol rol = new Rol();
             if (tabla.Rows.Count > 0)
             {
-                r.IdRol = Convert.ToInt32(tabla.Rows[0]["idrol"]);        
-                r.Nombre = tabla.Rows[0]["nombre"].ToString();
-                r.Estado = tabla.Rows[0]["estado"].ToString();
+                rol.IdRol = Convert.ToInt32(tabla.Rows[0]["idRol"]);
+                rol.Nombre = tabla.Rows[0]["nombre"].ToString();
+                rol.Estado = tabla.Rows[0]["estado"].ToString();
             }
-            return r;
+            return rol;
+        }
 
-        }
-        public void EditarRolDal(Rol r)
+        public void EditarRolDal(Rol rol)
         {
-            string consulta = "update rol set nombre='" + r.Nombre + "'" +                                             
-                                                     "where idrol=" + r.IdRol;
-            conexion.Ejecutar(consulta);
+            string consulta = "update rol set nombre ='" + rol.Nombre + "'," +
+                                             "estado ='" + rol.Estado + "' " +
+                                    "where idrol =" + rol.IdRol;
+
+            Conexion.Ejecutar(consulta);
         }
+
         public void EliminarRolDal(int id)
         {
-            string consulta = "delete from rol where idrol=" + id;
-            conexion.Ejecutar(consulta);
+            string consulta = "delete from rol where idrol =" + id;
+            Conexion.Ejecutar(consulta);
         }
     }
 }

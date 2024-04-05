@@ -1,4 +1,5 @@
 ﻿using SistemasVentas.DAL;
+using SistemasVentas.VISTA.ClienteVistas;
 using SistemasVentas.VISTA.GerenteVista;
 using System;
 using System.Collections.Generic;
@@ -24,7 +25,7 @@ namespace SistemasVentas.VISTA.VendedorVista
             string usuario = textBox1.Text;
             string contraseña= textBox2.Text;
 
-            if(conexion.VerificadorCredenciales(usuario,contraseña))
+            if(Conexion.VerificadorCredenciales2(usuario,contraseña))
             {
                 MessageBox.Show("Iniciando sesion");
                 VendedorListarVista formulario = new VendedorListarVista();
@@ -47,11 +48,11 @@ namespace SistemasVentas.VISTA.VendedorVista
             string usuario = textBox1.Text;
             string contraseña = textBox2.Text;
 
-            if (conexion.VerificadorCredenciales(usuario, contraseña))
+            if (Conexion.VerificadorCredenciales2(usuario, contraseña))
             {
                 MessageBox.Show("Iniciando sesion");
-                VendedorListarVista formulario = new VendedorListarVista();
-                formulario.Show();
+                VendeClienteListarVista cajeroForm = new VendeClienteListarVista();
+                cajeroForm.Show();
             }
             else
             {

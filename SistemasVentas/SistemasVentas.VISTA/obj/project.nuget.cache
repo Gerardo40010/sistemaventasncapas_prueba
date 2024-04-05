@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "jAa4W5Xm2B60GfCFtphbEOtEbROnYUXkXP3IWqt1gMetm06guhE/BDokxoH6f4AgOdWYnTbv3S+egtRD0iF1QQ==",
+  "dgSpecHash": "Kq9qFUu3wEkab+2JgHq4oX60KCJdj+9f6yuj8x4iGO14ilu7ykKyVVbPyk45TpobEnhVnAZBs5btzQmQwbZUnQ==",
   "success": true,
-  "projectFilePath": "D:\\Desarrollador de sistemas\\ProyectoFinal\\oa\\sistemaventasncapas_prueba\\SistemasVentas\\SistemasVentas.VISTA\\SistemasVentas.VISTA.csproj",
+  "projectFilePath": "D:\\Desarrollador de sistemas\\copiaaa\\soponki\\sistemaventascapas\\SistemasVentas\\SistemasVentas.VISTA\\SistemasVentas.VISTA.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",

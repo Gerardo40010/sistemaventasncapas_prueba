@@ -10,51 +10,58 @@ namespace SistemasVentas.DAL
 {
     public class UsuarioDal
     {
-        public DataTable ListarUsuarioDal()
+        public DataTable ListarUsuariosDal()
         {
-            string consulta = "select * from usuario";
-            DataTable Lista = conexion.EjecutarDataTabla(consulta, "tabla");
-            return Lista;
+            string consulta = "SELECT     USUARIO.IDPERSONA, (PERSONA.NOMBRE+' '+ PERSONA.APELLIDO) NOMBRECOMPLETO, \n " +
+                "USUARIO.NOMBREUSER, USUARIOROL.FECHAASIGNA, ROL.NOMBRE AS NOMBREROL\n" +
+                "FROM        PERSONA INNER JOIN\n" +
+                "USUARIO ON PERSONA.IDPERSONA = USUARIO.IDPERSONA INNER JOIN\n  " +
+                "USUARIOROL ON USUARIO.IDUSUARIO = USUARIOROL.IDUSUARIO INNER JOIN\n " +
+                "ROL ON USUARIOROL.IDROL = ROL.IDROL";
+            DataTable lista = Conexion.EjecutarDataTabla(consulta, "tabla");
+            return lista;
         }
+
         public void InsertarUsuarioDal(Usuario usuario)
         {
             string consulta = "insert into usuario values(" + usuario.IdPersona + "," +
                                                         "'" + usuario.NombreUser + "'," +
                                                         "'" + usuario.Contraseña + "'," +
-                                                        "'" + usuario.FechaReg+ "')";
-            conexion.Ejecutar(consulta);
+                                                        "'" + usuario.FechaReg + "')";
+            Conexion.Ejecutar(consulta);
         }
-       
+
         public Usuario ObtenerUsuarioId(int id)
         {
-            string consulta = "select * from usuario where idusuario=" + id;
-            DataTable tabla = conexion.EjecutarDataTabla(consulta, "asdas");
-            Usuario u = new Usuario();
-
+            string consulta = "select * from usuario where idusuario = " + id;
+            DataTable tabla = Conexion.EjecutarDataTabla(consulta, "asdas");
+            Usuario usuario = new Usuario();
             if (tabla.Rows.Count > 0)
             {
-                u.IdUsuario = Convert.ToInt32(tabla.Rows[0]["idusuario"]);
-                u.IdPersona = Convert.ToInt32(tabla.Rows[0]["idpersona"]);
-                u.NombreUser = tabla.Rows[0]["nombreuser"].ToString();
-                u.Contraseña = tabla.Rows[0]["contraseña"].ToString();
-                u.FechaReg = Convert.ToDateTime(tabla.Rows[0]["fechareg"]);            
+                usuario.IdUsuario = Convert.ToInt32(tabla.Rows[0]["idUsuario"]);
+                usuario.IdPersona = Convert.ToInt32(tabla.Rows[0]["idPersona"]);
+                usuario.NombreUser = tabla.Rows[0]["nombreUser"].ToString();
+                usuario.Contraseña = tabla.Rows[0]["contraseña"].ToString();
+                usuario.FechaReg = Convert.ToDateTime(tabla.Rows[0]["fechaReg"]);
             }
-            return u;
+            return usuario;
+        }
 
-        }
-        public void EditarUsuarioDal(Usuario u)
+        public void EditarUsuarioDal(Usuario usuario)
         {
-            string consulta = "update usuario set idpersona=" + u.IdPersona + "," +
-                                                  "nombreuser='" + u.NombreUser + "'," +
-                                                  "contraseña='" + u.Contraseña + "'," +
-                                                  "fechareg='" + u.FechaReg + "'" +                            
-                                          "where idusuario=" + u.IdUsuario;
-            conexion.Ejecutar(consulta);
+            string consulta = "update usuario set idpersona =" + usuario.IdPersona + "," +
+                                                 "nombreUser ='" + usuario.NombreUser + "'," +
+                                                 "contraseña ='" + usuario.Contraseña + "'," +
+                                                 "fechaReg ='" + usuario.FechaReg + "' " +
+                                    "where idusuario=" + usuario.IdUsuario;
+
+            Conexion.Ejecutar(consulta);
         }
+
         public void EliminarUsuarioDal(int id)
         {
-            string consulta = "delete from usuario where idusuario=" + id;
-            conexion.Ejecutar(consulta);
+            string consulta = "delete from usuario where idusuario =" + id;
+            Conexion.Ejecutar(consulta);
         }
     }
 }

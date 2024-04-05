@@ -96,7 +96,7 @@
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.button1.BackColor = System.Drawing.SystemColors.InfoText;
             this.button1.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.button1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.button1.Location = new System.Drawing.Point(120, 503);
@@ -106,6 +106,7 @@
             this.button1.TabIndex = 16;
             this.button1.Text = "INGRESAR";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // textBox2
             // 

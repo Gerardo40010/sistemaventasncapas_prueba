@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Desarrollador de sistemas\\ProyectoFinal\\oa\\sistemaventasncapas_prueba\\SistemasVentas\\SistemasVentas.BSS\\SistemasVentas.BSS.csproj": {}
+    "D:\\Desarrollador de sistemas\\copiaaa\\soponki\\sistemaventascapas\\SistemasVentas\\SistemasVentas.BSS\\SistemasVentas.BSS.csproj": {}
   },
   "projects": {
-    "D:\\Desarrollador de sistemas\\ProyectoFinal\\oa\\sistemaventasncapas_prueba\\SistemasVentas\\SistemasVentas.BSS\\SistemasVentas.BSS.csproj": {
+    "D:\\Desarrollador de sistemas\\copiaaa\\soponki\\sistemaventascapas\\SistemasVentas\\SistemasVentas.BSS\\SistemasVentas.BSS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Desarrollador de sistemas\\ProyectoFinal\\oa\\sistemaventasncapas_prueba\\SistemasVentas\\SistemasVentas.BSS\\SistemasVentas.BSS.csproj",
+        "projectUniqueName": "D:\\Desarrollador de sistemas\\copiaaa\\soponki\\sistemaventascapas\\SistemasVentas\\SistemasVentas.BSS\\SistemasVentas.BSS.csproj",
         "projectName": "SistemasVentas.BSS",
-        "projectPath": "D:\\Desarrollador de sistemas\\ProyectoFinal\\oa\\sistemaventasncapas_prueba\\SistemasVentas\\SistemasVentas.BSS\\SistemasVentas.BSS.csproj",
+        "projectPath": "D:\\Desarrollador de sistemas\\copiaaa\\soponki\\sistemaventascapas\\SistemasVentas\\SistemasVentas.BSS\\SistemasVentas.BSS.csproj",
         "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "D:\\Desarrollador de sistemas\\ProyectoFinal\\oa\\sistemaventasncapas_prueba\\SistemasVentas\\SistemasVentas.BSS\\obj\\",
+        "outputPath": "D:\\Desarrollador de sistemas\\copiaaa\\soponki\\sistemaventascapas\\SistemasVentas\\SistemasVentas.BSS\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,11 +28,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\Desarrollador de sistemas\\ProyectoFinal\\oa\\sistemaventasncapas_prueba\\SistemasVentas\\SistemasVentas.DAL\\SistemasVentas.DAL.csproj": {
-                "projectPath": "D:\\Desarrollador de sistemas\\ProyectoFinal\\oa\\sistemaventasncapas_prueba\\SistemasVentas\\SistemasVentas.DAL\\SistemasVentas.DAL.csproj"
+              "D:\\Desarrollador de sistemas\\copiaaa\\soponki\\sistemaventascapas\\SistemasVentas\\SistemasVentas.DAL\\SistemasVentas.DAL.csproj": {
+                "projectPath": "D:\\Desarrollador de sistemas\\copiaaa\\soponki\\sistemaventascapas\\SistemasVentas\\SistemasVentas.DAL\\SistemasVentas.DAL.csproj"
               },
-              "D:\\Desarrollador de sistemas\\ProyectoFinal\\oa\\sistemaventasncapas_prueba\\SistemasVentas\\SistemasVentas.Modelos\\SistemasVentas.Modelos.csproj": {
-                "projectPath": "D:\\Desarrollador de sistemas\\ProyectoFinal\\oa\\sistemaventasncapas_prueba\\SistemasVentas\\SistemasVentas.Modelos\\SistemasVentas.Modelos.csproj"
+              "D:\\Desarrollador de sistemas\\copiaaa\\soponki\\sistemaventascapas\\SistemasVentas\\SistemasVentas.Modelos\\SistemasVentas.Modelos.csproj": {
+                "projectPath": "D:\\Desarrollador de sistemas\\copiaaa\\soponki\\sistemaventascapas\\SistemasVentas\\SistemasVentas.Modelos\\SistemasVentas.Modelos.csproj"
               }
             }
           }
@@ -66,14 +66,14 @@
         }
       }
     },
-    "D:\\Desarrollador de sistemas\\ProyectoFinal\\oa\\sistemaventasncapas_prueba\\SistemasVentas\\SistemasVentas.DAL\\SistemasVentas.DAL.csproj": {
+    "D:\\Desarrollador de sistemas\\copiaaa\\soponki\\sistemaventascapas\\SistemasVentas\\SistemasVentas.DAL\\SistemasVentas.DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Desarrollador de sistemas\\ProyectoFinal\\oa\\sistemaventasncapas_prueba\\SistemasVentas\\SistemasVentas.DAL\\SistemasVentas.DAL.csproj",
+        "projectUniqueName": "D:\\Desarrollador de sistemas\\copiaaa\\soponki\\sistemaventascapas\\SistemasVentas\\SistemasVentas.DAL\\SistemasVentas.DAL.csproj",
         "projectName": "SistemasVentas.DAL",
-        "projectPath": "D:\\Desarrollador de sistemas\\ProyectoFinal\\oa\\sistemaventasncapas_prueba\\SistemasVentas\\SistemasVentas.DAL\\SistemasVentas.DAL.csproj",
+        "projectPath": "D:\\Desarrollador de sistemas\\copiaaa\\soponki\\sistemaventascapas\\SistemasVentas\\SistemasVentas.DAL\\SistemasVentas.DAL.csproj",
         "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "D:\\Desarrollador de sistemas\\ProyectoFinal\\oa\\sistemaventasncapas_prueba\\SistemasVentas\\SistemasVentas.DAL\\obj\\",
+        "outputPath": "D:\\Desarrollador de sistemas\\copiaaa\\soponki\\sistemaventascapas\\SistemasVentas\\SistemasVentas.DAL\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -90,8 +90,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\Desarrollador de sistemas\\ProyectoFinal\\oa\\sistemaventasncapas_prueba\\SistemasVentas\\SistemasVentas.Modelos\\SistemasVentas.Modelos.csproj": {
-                "projectPath": "D:\\Desarrollador de sistemas\\ProyectoFinal\\oa\\sistemaventasncapas_prueba\\SistemasVentas\\SistemasVentas.Modelos\\SistemasVentas.Modelos.csproj"
+              "D:\\Desarrollador de sistemas\\copiaaa\\soponki\\sistemaventascapas\\SistemasVentas\\SistemasVentas.Modelos\\SistemasVentas.Modelos.csproj": {
+                "projectPath": "D:\\Desarrollador de sistemas\\copiaaa\\soponki\\sistemaventascapas\\SistemasVentas\\SistemasVentas.Modelos\\SistemasVentas.Modelos.csproj"
               }
             }
           }
@@ -131,14 +131,14 @@
         }
       }
     },
-    "D:\\Desarrollador de sistemas\\ProyectoFinal\\oa\\sistemaventasncapas_prueba\\SistemasVentas\\SistemasVentas.Modelos\\SistemasVentas.Modelos.csproj": {
+    "D:\\Desarrollador de sistemas\\copiaaa\\soponki\\sistemaventascapas\\SistemasVentas\\SistemasVentas.Modelos\\SistemasVentas.Modelos.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Desarrollador de sistemas\\ProyectoFinal\\oa\\sistemaventasncapas_prueba\\SistemasVentas\\SistemasVentas.Modelos\\SistemasVentas.Modelos.csproj",
+        "projectUniqueName": "D:\\Desarrollador de sistemas\\copiaaa\\soponki\\sistemaventascapas\\SistemasVentas\\SistemasVentas.Modelos\\SistemasVentas.Modelos.csproj",
         "projectName": "SistemasVentas.Modelos",
-        "projectPath": "D:\\Desarrollador de sistemas\\ProyectoFinal\\oa\\sistemaventasncapas_prueba\\SistemasVentas\\SistemasVentas.Modelos\\SistemasVentas.Modelos.csproj",
+        "projectPath": "D:\\Desarrollador de sistemas\\copiaaa\\soponki\\sistemaventascapas\\SistemasVentas\\SistemasVentas.Modelos\\SistemasVentas.Modelos.csproj",
         "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "D:\\Desarrollador de sistemas\\ProyectoFinal\\oa\\sistemaventasncapas_prueba\\SistemasVentas\\SistemasVentas.Modelos\\obj\\",
+        "outputPath": "D:\\Desarrollador de sistemas\\copiaaa\\soponki\\sistemaventascapas\\SistemasVentas\\SistemasVentas.Modelos\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
