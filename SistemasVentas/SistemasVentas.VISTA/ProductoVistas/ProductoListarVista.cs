@@ -166,5 +166,10 @@ namespace SistemasVentas.VISTA.ProductoVistas
         {
             this.Close();
         }
+
+        private void ProductoListarVista_Load_1(object sender, EventArgs e)
+        {
+            dataGridView1.DataSource = bss.ListarProductosBass();
+        }
     }
 }

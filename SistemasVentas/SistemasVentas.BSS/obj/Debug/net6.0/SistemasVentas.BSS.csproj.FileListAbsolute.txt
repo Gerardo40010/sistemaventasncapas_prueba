@@ -15,3 +15,20 @@ D:\Desarrollador de sistemas\copiaaa\soponki\sistemaventascapas\SistemasVentas\S
 D:\Desarrollador de sistemas\copiaaa\soponki\sistemaventascapas\SistemasVentas\SistemasVentas.BSS\obj\Debug\net6.0\refint\SistemasVentas.BSS.dll
 D:\Desarrollador de sistemas\copiaaa\soponki\sistemaventascapas\SistemasVentas\SistemasVentas.BSS\obj\Debug\net6.0\SistemasVentas.BSS.pdb
 D:\Desarrollador de sistemas\copiaaa\soponki\sistemaventascapas\SistemasVentas\SistemasVentas.BSS\obj\Debug\net6.0\ref\SistemasVentas.BSS.dll
+D:\Desarrollador de sistemas\Proyecto Final Oficial\sistemaventasncapas_prueba\SistemasVentas\SistemasVentas.BSS\bin\Debug\net6.0\SistemasVentas.BSS.deps.json
+D:\Desarrollador de sistemas\Proyecto Final Oficial\sistemaventasncapas_prueba\SistemasVentas\SistemasVentas.BSS\bin\Debug\net6.0\SistemasVentas.BSS.dll
+D:\Desarrollador de sistemas\Proyecto Final Oficial\sistemaventasncapas_prueba\SistemasVentas\SistemasVentas.BSS\bin\Debug\net6.0\SistemasVentas.BSS.pdb
+D:\Desarrollador de sistemas\Proyecto Final Oficial\sistemaventasncapas_prueba\SistemasVentas\SistemasVentas.BSS\bin\Debug\net6.0\SistemasVentas.DAL.dll
+D:\Desarrollador de sistemas\Proyecto Final Oficial\sistemaventasncapas_prueba\SistemasVentas\SistemasVentas.BSS\bin\Debug\net6.0\SistemasVentas.Modelos.dll
+D:\Desarrollador de sistemas\Proyecto Final Oficial\sistemaventasncapas_prueba\SistemasVentas\SistemasVentas.BSS\bin\Debug\net6.0\SistemasVentas.DAL.pdb
+D:\Desarrollador de sistemas\Proyecto Final Oficial\sistemaventasncapas_prueba\SistemasVentas\SistemasVentas.BSS\bin\Debug\net6.0\SistemasVentas.Modelos.pdb
+D:\Desarrollador de sistemas\Proyecto Final Oficial\sistemaventasncapas_prueba\SistemasVentas\SistemasVentas.BSS\obj\Debug\net6.0\SistemasVentas.BSS.csproj.AssemblyReference.cache
+D:\Desarrollador de sistemas\Proyecto Final Oficial\sistemaventasncapas_prueba\SistemasVentas\SistemasVentas.BSS\obj\Debug\net6.0\SistemasVentas.BSS.GeneratedMSBuildEditorConfig.editorconfig
+D:\Desarrollador de sistemas\Proyecto Final Oficial\sistemaventasncapas_prueba\SistemasVentas\SistemasVentas.BSS\obj\Debug\net6.0\SistemasVentas.BSS.AssemblyInfoInputs.cache
+D:\Desarrollador de sistemas\Proyecto Final Oficial\sistemaventasncapas_prueba\SistemasVentas\SistemasVentas.BSS\obj\Debug\net6.0\SistemasVentas.BSS.AssemblyInfo.cs
+D:\Desarrollador de sistemas\Proyecto Final Oficial\sistemaventasncapas_prueba\SistemasVentas\SistemasVentas.BSS\obj\Debug\net6.0\SistemasVentas.BSS.csproj.CoreCompileInputs.cache
+D:\Desarrollador de sistemas\Proyecto Final Oficial\sistemaventasncapas_prueba\SistemasVentas\SistemasVentas.BSS\obj\Debug\net6.0\SistemasVentas.BSS.csproj.CopyComplete
+D:\Desarrollador de sistemas\Proyecto Final Oficial\sistemaventasncapas_prueba\SistemasVentas\SistemasVentas.BSS\obj\Debug\net6.0\SistemasVentas.BSS.dll
+D:\Desarrollador de sistemas\Proyecto Final Oficial\sistemaventasncapas_prueba\SistemasVentas\SistemasVentas.BSS\obj\Debug\net6.0\refint\SistemasVentas.BSS.dll
+D:\Desarrollador de sistemas\Proyecto Final Oficial\sistemaventasncapas_prueba\SistemasVentas\SistemasVentas.BSS\obj\Debug\net6.0\SistemasVentas.BSS.pdb
+D:\Desarrollador de sistemas\Proyecto Final Oficial\sistemaventasncapas_prueba\SistemasVentas\SistemasVentas.BSS\obj\Debug\net6.0\ref\SistemasVentas.BSS.dll

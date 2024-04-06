@@ -59,5 +59,46 @@ namespace SistemasVentas.VISTA.DetalleIngVistas
                 textBox2.Text = producto.Nombre;
             }
         }
+
+        private void button3_Click_1(object sender, EventArgs e)
+        {
+            IngresoListarVista fr = new IngresoListarVista();
+            if (fr.ShowDialog() == DialogResult.OK)
+            {
+                Ingreso ingreso = bssingreso.ObtenerIngresoIdBss(IdIngresoSeleccionado);
+                textBox1.Text = Convert.ToString(ingreso.IdIngreso);
+            }
+        }
+
+        private void button4_Click_1(object sender, EventArgs e)
+        {
+            ProductoListarVista fr = new ProductoListarVista();
+            if (fr.ShowDialog() == DialogResult.OK)
+            {
+                Producto producto = bssproducto.ObtenerProductoIdBss(IdProductoSeleccionado);
+                textBox2.Text = producto.Nombre;
+            }
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            DetalleIng detalleIng = new DetalleIng();
+            detalleIng.IdIngreso = IdIngresoSeleccionado;
+            detalleIng.IdProducto = IdProductoSeleccionado;
+            detalleIng.FechaVenc = dateTimePicker1.Value;
+            detalleIng.Cantidad = Convert.ToInt32(textBox3.Text);
+            detalleIng.PrecioCosto = Convert.ToDecimal(textBox4.Text);
+            detalleIng.PrecioVenta = Convert.ToDecimal(textBox5.Text);
+            detalleIng.SubTotal = Convert.ToDecimal(textBox6.Text);
+            detalleIng.Estado = textBox7.Text;
+
+            bss.InsertarDetalleIngBss(detalleIng);
+            MessageBox.Show("Se guardo correctamente el Detalle Ingreso");
+        }
+
+        private void DetalleIngInsertarVista_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

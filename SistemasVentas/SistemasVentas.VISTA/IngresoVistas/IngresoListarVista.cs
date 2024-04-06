@@ -162,5 +162,10 @@ namespace SistemasVentas.VISTA.IngresoVistas
         {
             this.Close();
         }
+
+        private void IngresoListarVista_Load_1(object sender, EventArgs e)
+        {
+            dataGridView1.DataSource = bss.ListarIngresosBass();
+        }
     }
 }

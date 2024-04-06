@@ -109,7 +109,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.label1.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.Location = new System.Drawing.Point(14, 12);
             this.label1.Name = "label1";
@@ -287,7 +287,7 @@
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(98, 35);
             this.button5.TabIndex = 15;
-            this.button5.Text = "MENU";
+            this.button5.Text = "Salir";
             this.button5.UseVisualStyleBackColor = true;
             // 
             // label3
@@ -315,6 +315,7 @@
             this.Controls.Add(this.label3);
             this.Name = "ProductoListarVista";
             this.Text = "ProductoListarVista";
+            this.Load += new System.EventHandler(this.ProductoListarVista_Load_1);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.pMenu.ResumeLayout(false);
             this.ResumeLayout(false);

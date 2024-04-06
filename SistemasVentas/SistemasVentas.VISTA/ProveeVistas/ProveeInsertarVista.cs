@@ -57,5 +57,37 @@ namespace SistemasVentas.VISTA.ProveeVistas
                 textBox2.Text = proveedor.Nombre;
             }
         }
+
+        private void button3_Click_1(object sender, EventArgs e)
+        {
+            ProductoListarVista fr = new ProductoListarVista();
+            if (fr.ShowDialog() == DialogResult.OK)
+            {
+                Producto producto = bssproducto.ObtenerProductoIdBss(IdProductoSeleccionado);
+                textBox1.Text = producto.Nombre;
+            }
+        }
+
+        private void button4_Click_1(object sender, EventArgs e)
+        {
+            ProveedorListarVista fr = new ProveedorListarVista();
+            if (fr.ShowDialog() == DialogResult.OK)
+            {
+                Proveedor proveedor = bssproveedor.ObtenerProveedorIdBss(IdProveedorSeleccionado);
+                textBox2.Text = proveedor.Nombre;
+            }
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            Provee provee = new Provee();
+            provee.IdProducto = IdProductoSeleccionado;
+            provee.IdProveedor = IdProveedorSeleccionado;
+            provee.Fecha = dateTimePicker1.Value;
+            provee.Precio = Convert.ToDecimal(textBox3.Text);
+
+            bss.InsertarProveeBss(provee);
+            MessageBox.Show("Se guardo correctamente el Provee");
+        }
     }
 }

@@ -162,5 +162,10 @@ namespace SistemasVentas.VISTA.RolVistas
         {
             this.Close();
         }
+
+        private void RolListarVista_Load_1(object sender, EventArgs e)
+        {
+            dataGridView1.DataSource = bss.ListarRolesBass();
+        }
     }
 }

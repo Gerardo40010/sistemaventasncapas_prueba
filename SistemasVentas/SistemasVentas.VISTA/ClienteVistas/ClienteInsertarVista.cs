@@ -43,5 +43,27 @@ namespace SistemasVentas.VISTA.ClienteVistas
                 textBox1.Text = persona.Nombre + " " + persona.Apellido;
             }
         }
+
+        private void button3_Click_1(object sender, EventArgs e)
+        {
+            PersonaListarVista fr = new PersonaListarVista();
+            if (fr.ShowDialog() == DialogResult.OK)
+            {
+                Persona persona = bsspersona.ObtenerIdBss(IdPersonaSeleccionada);
+                textBox1.Text = persona.Nombre + " " + persona.Apellido;
+            }
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            Cliente cliente = new Cliente();
+            cliente.IdPersona = IdPersonaSeleccionada;
+            cliente.TipoCliente = textBox2.Text;
+            cliente.CodigoCliente = textBox3.Text;
+            cliente.Estado = textBox4.Text;
+
+            bss.InsertarClienteBss(cliente);
+            MessageBox.Show("Se guardo correctamente el Cliente");
+        }
     }
 }

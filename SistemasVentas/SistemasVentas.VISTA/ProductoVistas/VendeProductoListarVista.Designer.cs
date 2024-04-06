@@ -223,8 +223,9 @@
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(98, 35);
             this.button5.TabIndex = 23;
-            this.button5.Text = "MENU";
+            this.button5.Text = "SALIR";
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click_1);
             // 
             // label1
             // 
@@ -244,6 +245,7 @@
             this.button3.TabIndex = 21;
             this.button3.Text = "EDITAR";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click_1);
             // 
             // button2
             // 
@@ -253,6 +255,7 @@
             this.button2.TabIndex = 19;
             this.button2.Text = "AGREGAR";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click_1);
             // 
             // button1
             // 
@@ -263,6 +266,7 @@
             this.button1.TabIndex = 18;
             this.button1.Text = "SELECCIONAR";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // dataGridView1
             // 
@@ -294,6 +298,7 @@
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "VendeProductoListarVista";
             this.Text = "VendeProductoListarVista";
+            this.Load += new System.EventHandler(this.VendeProductoListarVista_Load_1);
             this.pMenu.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);

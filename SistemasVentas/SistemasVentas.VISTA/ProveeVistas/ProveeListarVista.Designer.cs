@@ -291,7 +291,7 @@
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(98, 35);
             this.button5.TabIndex = 16;
-            this.button5.Text = "MENU";
+            this.button5.Text = "Salir";
             this.button5.UseVisualStyleBackColor = true;
             // 
             // label2
@@ -319,6 +319,7 @@
             this.Controls.Add(this.label2);
             this.Name = "ProveeListarVista";
             this.Text = "ProveeListarVista";
+            this.Load += new System.EventHandler(this.ProveeListarVista_Load_1);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.pMenu.ResumeLayout(false);
             this.ResumeLayout(false);

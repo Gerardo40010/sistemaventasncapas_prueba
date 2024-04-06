@@ -315,6 +315,7 @@
             this.Controls.Add(this.label3);
             this.Name = "DetalleVentaListarVista";
             this.Text = "DetalleVentaListarVista";
+            this.Load += new System.EventHandler(this.DetalleVentaListarVista_Load_1);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.pMenu.ResumeLayout(false);
             this.ResumeLayout(false);

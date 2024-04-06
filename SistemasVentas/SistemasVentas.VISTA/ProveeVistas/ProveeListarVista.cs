@@ -161,5 +161,10 @@ namespace SistemasVentas.VISTA.ProveeVistas
         {
             this.Close();
         }
+
+        private void ProveeListarVista_Load_1(object sender, EventArgs e)
+        {
+            dataGridView1.DataSource = bss.ListarProveesBass();
+        }
     }
 }

@@ -50,6 +50,7 @@
             this.button4.TabIndex = 57;
             this.button4.Text = "SELECCIONAR";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click_1);
             // 
             // button3
             // 
@@ -59,6 +60,7 @@
             this.button3.TabIndex = 56;
             this.button3.Text = "SELECCIONAR";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click_1);
             // 
             // button2
             // 
@@ -79,6 +81,7 @@
             this.button1.TabIndex = 54;
             this.button1.Text = "GUARDAR";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // textBox3
             // 
@@ -164,6 +167,7 @@
             this.Controls.Add(this.label2);
             this.Name = "ProveeEditarVista";
             this.Text = "ProveeEditarVista";
+            this.Load += new System.EventHandler(this.ProveeEditarVista_Load_1);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -54,6 +54,7 @@
             this.button3.TabIndex = 17;
             this.button3.Text = "EDITAR";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click_1);
             // 
             // button2
             // 
@@ -63,6 +64,7 @@
             this.button2.TabIndex = 15;
             this.button2.Text = "AGREGAR";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click_1);
             // 
             // button1
             // 
@@ -73,6 +75,7 @@
             this.button1.TabIndex = 14;
             this.button1.Text = "SELECCIONAR";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // dataGridView1
             // 

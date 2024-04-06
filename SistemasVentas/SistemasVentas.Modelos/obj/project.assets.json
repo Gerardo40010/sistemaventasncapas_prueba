@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Desarrollador de sistemas\\copiaaa\\soponki\\sistemaventascapas\\SistemasVentas\\SistemasVentas.Modelos\\SistemasVentas.Modelos.csproj",
+      "projectUniqueName": "D:\\Desarrollador de sistemas\\Proyecto Final Oficial\\sistemaventasncapas_prueba\\SistemasVentas\\SistemasVentas.Modelos\\SistemasVentas.Modelos.csproj",
       "projectName": "SistemasVentas.Modelos",
-      "projectPath": "D:\\Desarrollador de sistemas\\copiaaa\\soponki\\sistemaventascapas\\SistemasVentas\\SistemasVentas.Modelos\\SistemasVentas.Modelos.csproj",
+      "projectPath": "D:\\Desarrollador de sistemas\\Proyecto Final Oficial\\sistemaventasncapas_prueba\\SistemasVentas\\SistemasVentas.Modelos\\SistemasVentas.Modelos.csproj",
       "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-      "outputPath": "D:\\Desarrollador de sistemas\\copiaaa\\soponki\\sistemaventascapas\\SistemasVentas\\SistemasVentas.Modelos\\obj\\",
+      "outputPath": "D:\\Desarrollador de sistemas\\Proyecto Final Oficial\\sistemaventasncapas_prueba\\SistemasVentas\\SistemasVentas.Modelos\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",

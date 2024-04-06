@@ -161,5 +161,10 @@ namespace SistemasVentas.VISTA.DetalleIngVistas
         {
             this.Close();
         }
+
+        private void DetalleIngListarVista_Load_1(object sender, EventArgs e)
+        {
+            dataGridView1.DataSource = bss.ListarDetallesIngBass();
+        }
     }
 }

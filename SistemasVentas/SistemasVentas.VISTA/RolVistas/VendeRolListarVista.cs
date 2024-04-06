@@ -152,5 +152,15 @@ namespace SistemasVentas.VISTA.RolVistas
         {
             this.Close();
         }
+
+        private void VendeRolListarVista_Load_1(object sender, EventArgs e)
+        {
+            dataGridView1.DataSource = bss.ListarRolesBass();
+        }
+
+        private void button5_Click_1(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

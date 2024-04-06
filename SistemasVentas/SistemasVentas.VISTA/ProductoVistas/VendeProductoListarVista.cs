@@ -157,5 +157,45 @@ namespace SistemasVentas.VISTA.ProductoVistas
         {
             this.Close();
         }
+
+        private void button5_Click_1(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void VendeProductoListarVista_Load_1(object sender, EventArgs e)
+        {
+            dataGridView1.DataSource = bss.ListarProductosBass();
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            ProductoInsertarVista fr = new ProductoInsertarVista();
+            if (fr.ShowDialog() == DialogResult.OK)
+            {
+                dataGridView1.DataSource = bss.ListarProductosBass();
+            }
+        }
+
+        private void button3_Click_1(object sender, EventArgs e)
+        {
+            int IdProductoSeleccionado = Convert.ToInt32(dataGridView1.CurrentRow.Cells[0].Value);
+            ProductoEditarVista fr = new ProductoEditarVista(IdProductoSeleccionado);
+            if (fr.ShowDialog() == DialogResult.OK)
+            {
+                dataGridView1.DataSource = bss.ListarProductosBass();
+            }
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            CompraProductoVista.IdProductoSeleccionado = Convert.ToInt32(dataGridView1.CurrentRow.Cells[0].Value);
+            DetalleIngInsertarVista.IdProductoSeleccionado = Convert.ToInt32(dataGridView1.CurrentRow.Cells[0].Value);
+            DetalleIngEditarVista.IdProductoSeleccionado = Convert.ToInt32(dataGridView1.CurrentRow.Cells[0].Value);
+            DetalleVentaInsertarVista.IdProductoSeleccionado = Convert.ToInt32(dataGridView1.CurrentRow.Cells[0].Value);
+            DetalleVentaEditarVista.IdProductoSeleccionado = Convert.ToInt32(dataGridView1.CurrentRow.Cells[0].Value);
+            ProveeInsertarVista.IdProductoSeleccionado = Convert.ToInt32(dataGridView1.CurrentRow.Cells[0].Value);
+            ProveeEditarVista.IdProductoSeleccionado = Convert.ToInt32(dataGridView1.CurrentRow.Cells[0].Value);
+        }
     }
 }

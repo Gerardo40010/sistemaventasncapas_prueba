@@ -58,5 +58,44 @@ namespace SistemasVentas.VISTA.DetalleVentaVistas
                 textBox2.Text = producto.Nombre;
             }
         }
+
+        private void button3_Click_1(object sender, EventArgs e)
+        {
+            VentaListarVista fr = new VentaListarVista();
+            if (fr.ShowDialog() == DialogResult.OK)
+            {
+                Venta venta = bssventa.ObtenerVentaIdBss(IdVentaSeleccionada);
+                textBox1.Text = Convert.ToString(venta.IdVenta);
+            }
+        }
+
+        private void button4_Click_1(object sender, EventArgs e)
+        {
+            ProductoListarVista fr = new ProductoListarVista();
+            if (fr.ShowDialog() == DialogResult.OK)
+            {
+                Producto producto = bssproducto.ObtenerProductoIdBss(IdProductoSeleccionado);
+                textBox2.Text = producto.Nombre;
+            }
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            DetalleVenta detalleVenta = new DetalleVenta();
+            detalleVenta.IdVenta = IdVentaSeleccionada;
+            detalleVenta.IdProducto = IdProductoSeleccionado;
+            detalleVenta.Cantidad = Convert.ToInt32(textBox3.Text);
+            detalleVenta.PrecioVenta = Convert.ToDecimal(textBox4.Text);
+            detalleVenta.SubTotal = Convert.ToDecimal(textBox5.Text);
+            detalleVenta.Estado = textBox6.Text;
+
+            bss.InsertarDetalleVentaBss(detalleVenta);
+            MessageBox.Show("Se guardo correctamente el Detalle Venta");
+        }
+
+        private void DetalleVentaInsertarVista_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

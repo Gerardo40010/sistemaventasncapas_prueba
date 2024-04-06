@@ -161,5 +161,10 @@ namespace SistemasVentas.VISTA.UsuarioRolVistas
         {
             this.Close();
         }
+
+        private void UsuarioRolListarVista_Load_1(object sender, EventArgs e)
+        {
+            dataGridView1.DataSource = bss.ListarUsuarioRolesBass();
+        }
     }
 }

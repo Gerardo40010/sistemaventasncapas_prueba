@@ -71,5 +71,47 @@ namespace SistemasVentas.VISTA.VentaVistas
                 textBox2.Text = usuario.NombreUser;
             }
         }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            venta.IdCliente = IdClienteSeleccionado;
+            venta.IdVendedor = IdUsuarioSeleccionado;
+            venta.Fecha = dateTimePicker1.Value;
+            venta.Total = Convert.ToDecimal(textBox3.Text);
+            venta.Estado = textBox4.Text;
+
+            bss.EditarVentaBss(venta);
+            MessageBox.Show("Datos Actualizados");
+        }
+
+        private void button4_Click_1(object sender, EventArgs e)
+        {
+            UsuarioListarVista fr = new UsuarioListarVista();
+            if (fr.ShowDialog() == DialogResult.OK)
+            {
+                Usuario usuario = bssusuario.ObtenerUsuarioIdBss(IdUsuarioSeleccionado);
+                textBox2.Text = usuario.NombreUser;
+            }
+        }
+
+        private void button3_Click_1(object sender, EventArgs e)
+        {
+            ClienteListarVista fr = new ClienteListarVista();
+            if (fr.ShowDialog() == DialogResult.OK)
+            {
+                Cliente cliente = bsscliente.ObtenerClienteIdBss(IdClienteSeleccionado);
+                textBox1.Text = Convert.ToString(cliente.IdCliente);
+            }
+        }
+
+        private void VentaEditarVista_Load_1(object sender, EventArgs e)
+        {
+            venta = bss.ObtenerVentaIdBss(idx);
+            textBox1.Text = Convert.ToString(venta.IdCliente);
+            textBox2.Text = Convert.ToString(venta.IdVendedor);
+            dateTimePicker1.Value = Convert.ToDateTime(venta.Fecha);
+            textBox3.Text = Convert.ToString(venta.Total);
+            textBox4.Text = venta.Estado;
+        }
     }
 }

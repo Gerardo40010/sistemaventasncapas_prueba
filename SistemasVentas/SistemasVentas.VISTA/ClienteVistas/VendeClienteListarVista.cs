@@ -70,5 +70,33 @@ namespace SistemasVentas.VISTA.ClienteVistas
         {
             dataGridView1.DataSource = bss.ListarClientesBass();
         }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            ClienteInsertarVista fr = new ClienteInsertarVista();
+            if (fr.ShowDialog() == DialogResult.OK)
+            {
+                dataGridView1.DataSource = bss.ListarClientesBass();
+            }
+        }
+
+        private void button3_Click_1(object sender, EventArgs e)
+        {
+            int IdClienteSeleccionado = Convert.ToInt32(dataGridView1.CurrentRow.Cells[0].Value);
+            ClienteEditarVista fr = new ClienteEditarVista(IdClienteSeleccionado);
+            if (fr.ShowDialog() == DialogResult.OK)
+            {
+                dataGridView1.DataSource = bss.ListarClientesBass();
+            }
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            CompraProductoVista formulario = new CompraProductoVista();
+            formulario.Show();
+            CompraProductoVista.IdClienteSeleccionado = Convert.ToInt32(dataGridView1.CurrentRow.Cells[0].Value);
+             VentaInsertarVista.IdClienteSeleccionado = Convert.ToInt32(dataGridView1.CurrentRow.Cells[0].Value);
+             VentaEditarVista.IdClienteSeleccionado = Convert.ToInt32(dataGridView1.CurrentRow.Cells[0].Value);
+        }
     }
 }

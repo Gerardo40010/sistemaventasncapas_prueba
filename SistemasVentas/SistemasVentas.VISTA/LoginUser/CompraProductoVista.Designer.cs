@@ -57,6 +57,7 @@
             this.button2.TabIndex = 21;
             this.button2.Text = "SELECCIONAR";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click_1);
             // 
             // button1
             // 
@@ -67,6 +68,7 @@
             this.button1.TabIndex = 20;
             this.button1.Text = "SELECCIONAR";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // textBox3
             // 
@@ -151,13 +153,14 @@
             // button3
             // 
             this.button3.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.button3.Location = new System.Drawing.Point(14, 435);
+            this.button3.Location = new System.Drawing.Point(360, 334);
             this.button3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(103, 57);
             this.button3.TabIndex = 22;
             this.button3.Text = "MOSTRAR";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click_1);
             // 
             // dataGridView1
             // 
@@ -183,13 +186,14 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(489, 435);
+            this.button4.Location = new System.Drawing.Point(14, 53);
             this.button4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(123, 57);
             this.button4.TabIndex = 44;
             this.button4.Text = "IMPRIMIR";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click_1);
             // 
             // CompraProductoVista
             // 

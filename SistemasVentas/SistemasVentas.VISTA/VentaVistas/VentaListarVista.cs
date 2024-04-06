@@ -172,5 +172,16 @@ namespace SistemasVentas.VISTA.VentaVistas
                 dataGridView1.DataSource = bss.ListarVentasBass();
             }
         }
+
+        private void VentaListarVista_Load_1(object sender, EventArgs e)
+        {
+            dataGridView1.DataSource = bss.ListarVentasBass();
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            DetalleVentaEditarVista.IdVentaSeleccionada = Convert.ToInt32(dataGridView1.CurrentRow.Cells[0].Value);
+            DetalleVentaInsertarVista.IdVentaSeleccionada = Convert.ToInt32(dataGridView1.CurrentRow.Cells[0].Value);
+        }
     }
 }

@@ -56,5 +56,35 @@ namespace SistemasVentas.VISTA.UsuarioVistas
                 textBox1.Text = persona.Nombre + " " + persona.Apellido;
             }
         }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            usuario.IdPersona = IdPersonaSeleccionada;
+            usuario.NombreUser = textBox2.Text;
+            usuario.Contraseña = textBox3.Text;
+            usuario.FechaReg = dateTimePicker1.Value;
+
+            bss.EditarUsuarioBss(usuario);
+            MessageBox.Show("Datos Actualizados");
+        }
+
+        private void button3_Click_1(object sender, EventArgs e)
+        {
+            PersonaListarVista fr = new PersonaListarVista();
+            if (fr.ShowDialog() == DialogResult.OK)
+            {
+                Persona persona = bsspersona.ObtenerIdBss(IdPersonaSeleccionada);
+                textBox1.Text = persona.Nombre + " " + persona.Apellido;
+            }
+        }
+
+        private void UsuarioEditarVista_Load_1(object sender, EventArgs e)
+        {
+            usuario = bss.ObtenerUsuarioIdBss(idx);
+            textBox1.Text = Convert.ToString(usuario.IdPersona);
+            textBox2.Text = usuario.NombreUser;
+            textBox3.Text = usuario.Contraseña;
+            dateTimePicker1.Value = usuario.FechaReg;
+        }
     }
 }

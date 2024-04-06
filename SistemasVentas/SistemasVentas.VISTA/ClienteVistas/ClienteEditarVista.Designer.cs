@@ -60,6 +60,7 @@
             this.button1.TabIndex = 36;
             this.button1.Text = "GUARDAR";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // textBox4
             // 
@@ -133,6 +134,7 @@
             this.button3.TabIndex = 38;
             this.button3.Text = "SELECCIONAR";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click_1);
             // 
             // ClienteEditarVista
             // 
@@ -153,6 +155,7 @@
             this.Controls.Add(this.label1);
             this.Name = "ClienteEditarVista";
             this.Text = "ClienteEditarVista";
+            this.Load += new System.EventHandler(this.ClienteEditarVista_Load_1);
             this.ResumeLayout(false);
             this.PerformLayout();
 

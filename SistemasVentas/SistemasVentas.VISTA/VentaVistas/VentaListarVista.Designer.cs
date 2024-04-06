@@ -96,6 +96,7 @@
             this.button1.TabIndex = 16;
             this.button1.Text = "SELECCIONAR";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // dataGridView1
             // 
@@ -292,7 +293,7 @@
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(98, 35);
             this.button5.TabIndex = 21;
-            this.button5.Text = "MENU";
+            this.button5.Text = "SALIR";
             this.button5.UseVisualStyleBackColor = true;
             // 
             // label3
@@ -320,6 +321,7 @@
             this.Controls.Add(this.label3);
             this.Name = "VentaListarVista";
             this.Text = "VentaListarVista";
+            this.Load += new System.EventHandler(this.VentaListarVista_Load_1);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.pMenu.ResumeLayout(false);
             this.ResumeLayout(false);

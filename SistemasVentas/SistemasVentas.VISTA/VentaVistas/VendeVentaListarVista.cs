@@ -151,5 +151,35 @@ namespace SistemasVentas.VISTA.VentaVistas
         {
             this.Close();
         }
+
+        private void VendeVentaListarVista_Load_1(object sender, EventArgs e)
+        {
+            dataGridView1.DataSource = bss.ListarVentasBass();
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            VentaInsertarVista fr = new VentaInsertarVista();
+            if (fr.ShowDialog() == DialogResult.OK)
+            {
+                dataGridView1.DataSource = bss.ListarVentasBass();
+            }
+        }
+
+        private void button3_Click_1(object sender, EventArgs e)
+        {
+            int IdVentaSeleccionada = Convert.ToInt32(dataGridView1.CurrentRow.Cells[0].Value);
+            VentaEditarVista fr = new VentaEditarVista(IdVentaSeleccionada);
+            if (fr.ShowDialog() == DialogResult.OK)
+            {
+                dataGridView1.DataSource = bss.ListarVentasBass();
+            }
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            DetalleVentaEditarVista.IdVentaSeleccionada = Convert.ToInt32(dataGridView1.CurrentRow.Cells[0].Value);
+            DetalleVentaInsertarVista.IdVentaSeleccionada = Convert.ToInt32(dataGridView1.CurrentRow.Cells[0].Value);
+        }
     }
 }

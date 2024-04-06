@@ -74,10 +74,7 @@ namespace SistemasVentas.VISTA.MarcaVistas
 
         private void button5_Click(object sender, EventArgs e)
         {
-            if (!pMenu.Visible)
-                pMenu.Visible = true;
-            else
-                pMenu.Visible = false;
+          this.Close();
         }
 
         private void button6_Click(object sender, EventArgs e)
@@ -161,6 +158,16 @@ namespace SistemasVentas.VISTA.MarcaVistas
         private void button19_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void button5_Click_1(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void MarcaListarVista_Load_1(object sender, EventArgs e)
+        {
+            dataGridView1.DataSource = bss.ListarMarcasBass();
         }
     }
 }

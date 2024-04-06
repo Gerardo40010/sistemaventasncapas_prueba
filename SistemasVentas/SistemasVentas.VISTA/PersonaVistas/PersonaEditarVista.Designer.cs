@@ -63,6 +63,7 @@
             this.button1.TabIndex = 54;
             this.button1.Text = "GUARDAR";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // textBox6
             // 
@@ -182,6 +183,7 @@
             this.Controls.Add(this.label1);
             this.Name = "PersonaEditarVista";
             this.Text = "PersonaEditarVista";
+            this.Load += new System.EventHandler(this.PersonaEditarVista_Load_1);
             this.ResumeLayout(false);
             this.PerformLayout();
 

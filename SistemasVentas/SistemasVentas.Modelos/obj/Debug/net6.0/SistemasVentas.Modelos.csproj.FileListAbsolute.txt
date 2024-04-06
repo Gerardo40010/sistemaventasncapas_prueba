@@ -10,3 +10,15 @@ D:\Desarrollador de sistemas\copiaaa\soponki\sistemaventascapas\SistemasVentas\S
 D:\Desarrollador de sistemas\copiaaa\soponki\sistemaventascapas\SistemasVentas\SistemasVentas.Modelos\obj\Debug\net6.0\refint\SistemasVentas.Modelos.dll
 D:\Desarrollador de sistemas\copiaaa\soponki\sistemaventascapas\SistemasVentas\SistemasVentas.Modelos\obj\Debug\net6.0\SistemasVentas.Modelos.pdb
 D:\Desarrollador de sistemas\copiaaa\soponki\sistemaventascapas\SistemasVentas\SistemasVentas.Modelos\obj\Debug\net6.0\ref\SistemasVentas.Modelos.dll
+D:\Desarrollador de sistemas\Proyecto Final Oficial\sistemaventasncapas_prueba\SistemasVentas\SistemasVentas.Modelos\bin\Debug\net6.0\SistemasVentas.Modelos.deps.json
+D:\Desarrollador de sistemas\Proyecto Final Oficial\sistemaventasncapas_prueba\SistemasVentas\SistemasVentas.Modelos\bin\Debug\net6.0\SistemasVentas.Modelos.dll
+D:\Desarrollador de sistemas\Proyecto Final Oficial\sistemaventasncapas_prueba\SistemasVentas\SistemasVentas.Modelos\bin\Debug\net6.0\SistemasVentas.Modelos.pdb
+D:\Desarrollador de sistemas\Proyecto Final Oficial\sistemaventasncapas_prueba\SistemasVentas\SistemasVentas.Modelos\obj\Debug\net6.0\SistemasVentas.Modelos.csproj.AssemblyReference.cache
+D:\Desarrollador de sistemas\Proyecto Final Oficial\sistemaventasncapas_prueba\SistemasVentas\SistemasVentas.Modelos\obj\Debug\net6.0\SistemasVentas.Modelos.GeneratedMSBuildEditorConfig.editorconfig
+D:\Desarrollador de sistemas\Proyecto Final Oficial\sistemaventasncapas_prueba\SistemasVentas\SistemasVentas.Modelos\obj\Debug\net6.0\SistemasVentas.Modelos.AssemblyInfoInputs.cache
+D:\Desarrollador de sistemas\Proyecto Final Oficial\sistemaventasncapas_prueba\SistemasVentas\SistemasVentas.Modelos\obj\Debug\net6.0\SistemasVentas.Modelos.AssemblyInfo.cs
+D:\Desarrollador de sistemas\Proyecto Final Oficial\sistemaventasncapas_prueba\SistemasVentas\SistemasVentas.Modelos\obj\Debug\net6.0\SistemasVentas.Modelos.csproj.CoreCompileInputs.cache
+D:\Desarrollador de sistemas\Proyecto Final Oficial\sistemaventasncapas_prueba\SistemasVentas\SistemasVentas.Modelos\obj\Debug\net6.0\SistemasVentas.Modelos.dll
+D:\Desarrollador de sistemas\Proyecto Final Oficial\sistemaventasncapas_prueba\SistemasVentas\SistemasVentas.Modelos\obj\Debug\net6.0\refint\SistemasVentas.Modelos.dll
+D:\Desarrollador de sistemas\Proyecto Final Oficial\sistemaventasncapas_prueba\SistemasVentas\SistemasVentas.Modelos\obj\Debug\net6.0\SistemasVentas.Modelos.pdb
+D:\Desarrollador de sistemas\Proyecto Final Oficial\sistemaventasncapas_prueba\SistemasVentas\SistemasVentas.Modelos\obj\Debug\net6.0\ref\SistemasVentas.Modelos.dll

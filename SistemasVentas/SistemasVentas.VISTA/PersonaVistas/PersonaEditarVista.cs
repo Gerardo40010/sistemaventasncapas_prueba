@@ -47,5 +47,29 @@ namespace SistemasVentas.VISTA.PersonaVistas
             bss.EditarPersonaBss(persona);
             MessageBox.Show("Datos Actualizados");
         }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            persona.Nombre = textBox1.Text;
+            persona.Apellido = textBox2.Text;
+            persona.Telefono = textBox3.Text;
+            persona.Ci = textBox4.Text;
+            persona.Correo = textBox5.Text;
+            persona.Estado = textBox6.Text;
+
+            bss.EditarPersonaBss(persona);
+            MessageBox.Show("Datos Actualizados");
+        }
+
+        private void PersonaEditarVista_Load_1(object sender, EventArgs e)
+        {
+            persona = bss.ObtenerIdBss(idx);
+            textBox1.Text = persona.Nombre;
+            textBox2.Text = persona.Apellido;
+            textBox3.Text = persona.Telefono;
+            textBox4.Text = persona.Ci;
+            textBox5.Text = persona.Correo;
+            textBox6.Text = persona.Estado;
+        }
     }
 }

@@ -2,6 +2,7 @@
 using SistemasVentas.Modelos;
 using SistemasVentas.VISTA.ClienteVistas;
 using SistemasVentas.VISTA.ProductoVistas;
+using SistemasVentas.VISTA.VentaVistas;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -69,6 +70,79 @@ namespace SistemasVentas.VISTA.LoginUser
         }
 
         private void button4_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                SaveFileDialog saveDialog = new SaveFileDialog();
+                saveDialog.Filter = "Archivos de texto (*.txt)|*.txt";
+                saveDialog.FileName = "ReporteVentas.txt";
+
+                if (saveDialog.ShowDialog() == DialogResult.OK)
+                {
+                    using (StreamWriter writer = new StreamWriter(saveDialog.FileName))
+                    {
+                        foreach (DataGridViewColumn columna in dataGridView1.Columns)
+                        {
+                            writer.Write(columna.HeaderText + "\t");
+                        }
+                        writer.WriteLine();
+
+                        foreach (DataGridViewRow fila in dataGridView1.Rows)
+                        {
+                            foreach (DataGridViewCell celda in fila.Cells)
+                            {
+                                writer.Write(celda.Value.ToString() + "\t");
+                            }
+                            writer.WriteLine();
+                        }
+                    }
+
+                    MessageBox.Show("El archivo TXT ha sido creado exitosamente.", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al exportar los datos: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            VendeProductoListarVista fr = new VendeProductoListarVista();
+            if (fr.ShowDialog() == DialogResult.OK)
+            {
+                Producto producto = bssproducto.ObtenerProductoIdBss(IdProductoSeleccionado);
+                textBox2.Text = producto.Nombre;
+            }
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+;
+            ClienteListarVista fr = new ClienteListarVista();
+            if (fr.ShowDialog() == DialogResult.OK)
+            {
+                Cliente cliente = bsscliente.ObtenerClienteIdBss(IdClienteSeleccionado);
+                textBox1.Text = Convert.ToString(cliente.IdCliente);
+            }
+        }
+
+        private void button3_Click_1(object sender, EventArgs e)
+        {
+            Cliente cliente = bsscliente.ObtenerClienteIdBss(IdClienteSeleccionado);
+            Producto producto = bssproducto.ObtenerProductoIdBss(IdProductoSeleccionado);
+
+            int cantidad;
+            if (!int.TryParse(textBox3.Text, out cantidad))
+            {
+                MessageBox.Show("Por favor, ingrese una cantidad válida.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            AgregarProductoSeleccionadoAlDataGridView(producto, cliente, cantidad);
+        }
+
+        private void button4_Click_1(object sender, EventArgs e)
         {
             try
             {
